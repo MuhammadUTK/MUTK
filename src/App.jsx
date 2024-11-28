@@ -1,17 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ResumeLayout from "./component/resume/ResumeLayout.jsx";
-import HomeLayout from "./component/HomeLayout/HomeLayout.jsx";
-import React from "react";
-import Complete from "./component/Navbar/complete.jsx";
+import ResumeLayout from "./component/Resume/ResumeBody/ResumeLayout.jsx";
+import Tariqon from "./component/Tariqon/Tariqon.jsx";
 
 const router = createBrowserRouter([
     {
-        element: <Complete />, // Component to render
-        children: [
-            { path: "/", element: <ResumeLayout /> },
-            { path: "/tariqon", element: <HomeLayout /> },
-        ]
+        path: "/",
+        element: <ResumeLayout />, // Component to render
     },
+    {
+        path: "/tariqon",
+        element: <Tariqon />,
+    }
 ]);
 
 function App() {

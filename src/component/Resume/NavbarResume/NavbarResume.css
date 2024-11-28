@@ -1,0 +1,38 @@
+.resume-navbar {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0e0e;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.resume-nav-items {
+    padding: 10px;
+}
+
+.resume-listing-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.resume-nav-list-item a {
+    text-decoration: none;
+    color: #F4883E;
+    padding: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+.resume-nav-list-item a:hover {
+    background-color: #F69F65;
+    color: #0E182A;
+}
