@@ -11,7 +11,7 @@
 }
 
 .main-section{
-    flex-grow: 2;
+    flex-grow: 1;
     background: #292929;
     overflow: auto;
 }

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f0e0e;
+    background: linear-gradient(to right, #00396e 70%, #a90027 100%);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -24,15 +24,14 @@
 
 .resume-nav-list-item a {
     text-decoration: none;
-    color: #F4883E;
+    color: #ffffff;
     padding: 10px;
     margin: 0 15px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    border-radius: 10px;
 }
 
 .resume-nav-list-item a:hover {
-    background-color: #F69F65;
+    border-bottom:  2px solid #ff9f1c;
     color: #0E182A;
 }

@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ResumeLayout from "./component/Resume/ResumeBody/ResumeLayout.jsx";
+import Resume from "./component/Resume/Resume.jsx";
 import Tariqon from "./component/Tariqon/Tariqon.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <ResumeLayout />, // Component to render
+        element: <Resume />, // Component to render
     },
     {
         path: "/tariqon",
