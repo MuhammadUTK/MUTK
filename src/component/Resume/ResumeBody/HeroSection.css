@@ -22,13 +22,104 @@
     overflow: hidden;
 }
 
+.orbit-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    z-index: 20;
+    background: #fdca66;
+}
+
 .resume-image img {
     position: absolute;
-    top: 50%;
     transform: translate(-50%, -50%);
-    left: 30%;
-    width: 18rem;
-    z-index: 2;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+}
+
+.orbit {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px dashed black;
+    left: 50%;
+    top: 50%;
+}
+
+.orbit-1 {
+    width: 300px;
+    height: 300px;
+    animation: clockwise-rotate 30s linear infinite;
+}
+
+.orbit-2 {
+    width: 450px;
+    height: 450px;
+    animation: anticlockwise-rotate 50s linear infinite;
+}
+
+
+@keyframes clockwise-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes anticlockwise-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.orbit-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+}
+
+.orbit-img:nth-child(1) {
+    transform: rotate(0deg) translate(150px) rotate(0deg);
+}
+
+.orbit-img:nth-child(2) {
+    transform: rotate(-120deg) translate(150px) rotate(120deg);
+}
+
+.orbit-img:nth-child(3) {
+    transform: rotate(-240deg) translate(150px) rotate(240deg);
+}
+
+.orbit-2 .orbit-img:nth-child(1) {
+    transform: rotate(-0deg) translate(225px) rotate(0deg);
+}
+
+.orbit-2 .orbit-img:nth-child(2) {
+    transform: rotate(-120deg) translate(225px) rotate(120deg);
+}
+
+.orbit-2 .orbit-img:nth-child(3) {
+    transform: rotate(-240deg) translate(225px) rotate(240deg);
+}
+
+@keyframes orbit1-image-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .resume-hero-cloud {
