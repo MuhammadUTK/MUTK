@@ -11,13 +11,89 @@
 .resume-intro {
     width: 40%;
     height: 100%;
-    background-color: #00396e;
+    background-color: #faf8f5;
+    position: relative;
+    font-family: "Nunito", sans-serif;
+}
+
+.resume-intro-heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 30%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.resume-intro-text {
+    width: 80%;
+    height: 25%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-input-container {
+    position: relative;
+    width: 80%;
+    height: 15%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-form input {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    width: 70%;
+    max-width: 400px;
+    background: #ffffff;
+    color: #333;
+}
+
+.hero-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #ff6a3d;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero-form button:hover {
+    background: #ff4a1e;
 }
 
 .resume-hero-graphics {
     position: relative;
     width: 60%;
-    background: linear-gradient(to right, #00396e 50%, #a90027 100%);
+    background: linear-gradient(to right, #faf8f5 10%, #fc775a 100%);
     padding: 1rem;
     overflow: hidden;
 }
@@ -30,7 +106,6 @@
     width: 300px;
     height: 300px;
     z-index: 20;
-    background: #fdca66;
 }
 
 .resume-image img {
@@ -44,7 +119,6 @@
 .orbit {
     position: absolute;
     border-radius: 50%;
-    border: 1px dashed black;
     left: 50%;
     top: 50%;
 }
@@ -52,15 +126,16 @@
 .orbit-1 {
     width: 300px;
     height: 300px;
-    animation: clockwise-rotate 30s linear infinite;
+    animation: clockwise-rotate 20s linear infinite;
+    border: 1px solid #a90027;
 }
 
 .orbit-2 {
     width: 450px;
     height: 450px;
-    animation: anticlockwise-rotate 50s linear infinite;
+    animation: anticlockwise-rotate 60s linear infinite;
+    border: 1px solid #0066c1;
 }
-
 
 @keyframes clockwise-rotate {
     from {
@@ -122,10 +197,73 @@
     }
 }
 
+.orbit-external {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%)
+}
+
+.orbit-external-container {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.orbit-external-img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.orbit-external-container:nth-child(1) {
+    transform: rotate(-15deg) translate(280px) rotate(15deg);
+}
+
+.orbit-external-container:nth-child(2) {
+    transform: rotate(0deg) translate(280px) rotate(0deg);
+}
+
+.orbit-external-container:nth-child(3) {
+    transform: rotate(15deg) translate(280px) rotate(-15deg);
+}
+
+.orbit-external-container:nth-child(4) {
+    transform: rotate(30deg) translate(280px) rotate(-30deg);
+}
+
+.orbit-external-container:nth-child(5) {
+    transform: rotate(45deg) translate(280px) rotate(-45deg);
+}
+
+.orbit-external-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    height: 50%;
+    border-radius: 30px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    background: linear-gradient(to right, #00396e, #a90027);
+    color: white;
+}
+
 .resume-hero-cloud {
     width: 400px;
     height: 300px;
-    background: #ffffff;
+    background: #faf8f5;
     position: relative;
     top: calc((100% - 300px) + 1rem);
     left: calc((100% - 400px) + 1rem);
@@ -133,7 +271,7 @@
 
 .resume-hero-cloud-circle {
     border-radius: 50%;
-    background: #ffffff;
+    background: #faf8f5;
     position: absolute;
 }
 

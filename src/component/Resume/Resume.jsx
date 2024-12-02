@@ -1,3 +1,4 @@
+
 import HeroSection from "./ResumeBody/HeroSection.jsx";
 import NavbarResume from "./NavbarResume/NavbarResume.jsx";
 
