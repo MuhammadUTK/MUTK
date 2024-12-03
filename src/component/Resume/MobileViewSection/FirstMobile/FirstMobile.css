@@ -1,0 +1,130 @@
+.first-mobile-container {
+    width: 260px;
+    height: 80%;
+    position: relative;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.first-mobile-body {
+    position: absolute;
+    background-color: #ffb689;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    border: 3px solid #424242; /* Inner border */
+    outline: 2px solid #222222;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mobile-date {
+    width: 100%;
+    height: 12%;
+    color: #8e573a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.first-mobile-title {
+    font-family: "Belanosima", sans-serif;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu__button {
+    width: 40%;
+    height: 100%;
+    color: #270d04;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #ffb689;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.first-mobile-heading-divider {
+    width: 5%;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid #8e573a;
+    transform: rotate(-30deg) translate(50%)
+}
+
+.mobile-tasks-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 75%;
+    background: #faf8f5;
+    border-radius: 50px;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 700;
+}
+
+.mobile-tasks-dates {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+
+.date-item {
+    flex: 0 0 calc(100% / 7);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.date-item::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: #d2d2d0;
+}
+
+
+
+
+
+
+
+.mobile-frame__button--power {
+    position: absolute;
+    top: 20%;
+    left: -3px;
+    width: 5px;
+    height: 30px;
+    background-color: #222222;
+    border-radius: 3px;
+    z-index: 0;
+}
+
+.mobile-frame__button--sound {
+    position: absolute;
+    top: 33%;
+    left: -3px;
+    width: 5px;
+    height: 35px;
+    background-color: #222222;
+    border-radius: 3px;
+    z-index: 0;
+    box-shadow: 0 40px 0 rgba(0, 0, 0 , 1);
+}

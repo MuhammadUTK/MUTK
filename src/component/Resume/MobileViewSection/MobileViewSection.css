@@ -1,0 +1,20 @@
+.card-section {
+    height: 700px;
+    /*background-color: #faf8f5;*/
+    background-color: #a90027;
+    position: relative;
+}
+
+.card-section-container {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    background-color: #ffebd2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
