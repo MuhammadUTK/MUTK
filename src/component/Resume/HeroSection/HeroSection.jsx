@@ -85,9 +85,6 @@ function HeroSection() {
                         <div className="resume-hero-cloud-circle small-4"></div>
                     </div>
                 </div>
-
-            </div>
-                <div className="resume-hero-sidebar">SideBar
             </div>
         </div>
     )

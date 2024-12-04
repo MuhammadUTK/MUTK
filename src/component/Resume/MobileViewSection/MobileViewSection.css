@@ -1,20 +1,99 @@
 .card-section {
-    height: 700px;
-    /*background-color: #faf8f5;*/
-    background-color: #a90027;
+    height: 100vh;
     position: relative;
+    background: radial-gradient(#fbc29b, #fff3e9);
+    overflow: hidden;
 }
 
 .card-section-container {
     position: absolute;
     height: 80%;
     width: 90%;
-    background-color: #ffebd2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+.card-section-blur-window {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+}
+
+.background-circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.circle{
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    animation: randomMotion 25s linear infinite;
+}
+
+@keyframes randomMotion {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    20% {
+        transform: translate(-60px, -200px) scale(1.5);
+    }
+    40% {
+        transform: translate(100px, 200px) scale(0.9);
+    }
+    60% {
+        transform: translate(-500px, -100px) scale(1.2);
+    }
+    80% {
+        transform: translate(300px, -400px) scale(0.8);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+.huge {
+    top: -25%;
+    left: 10%;
+    transform: translate(-10%, 25%);
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right , #d96c6e, #ffbb7c);
+}
+
+.big {
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to right, #ffe4cb, #ffb881);
+}
+
+.medium {
+    top: 40%;
+    left: 90%;
+    transform: translate(-90%, -40%);
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(#d96c6e, #ffe4cb);
+}
+
+.small {
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%, -90%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff1e8;
 }
