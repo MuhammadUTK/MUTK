@@ -5,9 +5,9 @@
     font-family: "Nunito", sans-serif;
 }
 
-.first-mobile-body {
+.second-mobile-body {
     position: absolute;
-    background-color: #ffb689;
+    background-color: #fff4eb;
     height: 100%;
     width: 100%;
     border-radius: 60px;
@@ -16,6 +16,304 @@
     z-index: 1;
     overflow: hidden;
 }
+
+.second-mobile-header {
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+
+.second-mobile-date-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.second-mobile-date {
+    width: 60%;
+    height: 50%;
+    background-color: #20150f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffccad;
+}
+
+.second-mobile-account-info {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.account-holder-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #897e76;
+}
+
+.account-holder-name {
+    color: #3a2f2c;
+    font-weight: bold;
+}
+
+.account-holder-profile {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.account-holder-profile img {
+    width: 20px;
+    height: 20px;
+}
+
+.second-account-title {
+    width: 100%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #241a13;
+}
+
+.debit-card-container {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debit-card {
+    width: 90%;
+    height: 95%;
+    background-color: #20150f;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upper-design {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border: 1px solid rgba(235,111,146,0.1);
+    top: -85%;
+    left: 80%;
+    transform: translate(-80%);
+    border-radius: 50%;
+}
+
+.extreme-circle {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    border: 1px solid rgba(235,111,146,0.5);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #36221d;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-circle {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background: linear-gradient(to right , #ec6f93, #febc7b);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.lower-design {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #ec6f93, #febc7b);
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" d="M0,0L48,5.3C96,11,192,21,288,58.7C384,96,480,160,576,176C672,192,768,160,864,122.7C960,85,1056,43,1152,64C1248,85,1344,171,1392,213.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" d="M0,0L48,5.3C96,11,192,21,288,58.7C384,96,480,160,576,176C672,192,768,160,864,122.7C960,85,1056,43,1152,64C1248,85,1344,171,1392,213.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+.debit-card-info {
+    width: 100%;
+    height: 100%;
+}
+
+.card-type {
+    width: 100%;
+    height: 30%;
+    padding-left: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #fff4eb;
+    display: flex;
+    align-items: center;
+}
+
+.card-type p {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card-logo {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.card-logo-circle1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff4eb;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+}
+
+.card-logo-circle2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-75%, -50%);
+    border: 2px solid #fff4eb;
+}
+
+.card-data {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+
+
+.card-infographics {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card-infographics img {
+    height: 60%;
+    margin: 0 5px;
+}
+
+.account-balance {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff4eb;
+}
+
+.card-details {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.card-holder-name {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff4eb;
+}
+
+.card-expire-date {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #20150f;
+}
+
+.subscription-container {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.subscription-title {
+    width: 100%;
+    height: 10%;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #d76d6e;
+    background-color: #fdca66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.subscription-list-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffb880;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.subscription-scroll {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
 
 .mobile-frame__button--power {
     position: absolute;

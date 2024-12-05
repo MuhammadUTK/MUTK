@@ -1,18 +1,14 @@
 import "./FirstMobile.css";
 import Tasks from "./Tasks/Tasks.jsx";
-import Person from "../../Images/Task-Persons/Person4.png"
+import Person from "../../Images/Task-Persons/Person6.png"
 
 const FirstMobile = () => {
-
-
 
     const options = { day: "2-digit", month: "short", year: "numeric" };
     const currentDate = new Date().toLocaleDateString("en-UK", options);
 
-
     // Generate dates (1 to 31)
     const dates = Array.from({ length: 31 }, (_, i) => i + 1);
-    console.log(dates);
 
     return (
         <div className="first-mobile-container">
