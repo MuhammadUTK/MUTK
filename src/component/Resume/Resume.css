@@ -1,0 +1,10 @@
+.mutk-website {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    transition: transform 1.5s ease-in-out;
+}
+
+.mutk-hero-section .mutk-mobile-section {
+    scroll-snap-align: start;
+}

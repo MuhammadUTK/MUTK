@@ -1,32 +1,110 @@
 .subscription-card-container {
-    width: 80%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
-    background-color: #ffc699;
-    margin: 5px auto;
+    background-color: #ffd7b9;
     display: flex;
     justify-content: center;
 }
 
 .subscription-content {
-    background: #a90027;
     width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.brand-logo {
-    width: 25%;
+.brand-logo-container {
+    width: 20%;
     height: 80%;
-    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brand-logo {
+    width: 35px;
+    height: 35px;
     border-radius: 10px;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .brand-logo img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+}
+
+.subscription-info {
+    width: 25%;
+    height: 80%;
+    position: relative;
+    padding: 5px 0;
+}
+
+.brand-name {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    color: #0d0b08;
+}
+
+.subscription-date {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+    top: 50%;
+    color: #dc7972;
+}
+
+.subscription-cost {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 0.7rem;
+    padding-right: 5px;
+    font-weight: 900;
+}
+
+.subscription-more-options {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-option-container {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffcca3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-option-circles {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    color: #0d0b08;
+    background-color: #d76a6b;
+    box-shadow: 7px 0 0 rgba(215,106,107, 1),
+                -7px 0 0 rgba(215,106,107, 1);
 }

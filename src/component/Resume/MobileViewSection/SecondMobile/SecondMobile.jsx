@@ -2,13 +2,82 @@ import "./SecondMobile.css";
 import Person from "../../Images/Task-Persons/Person2.png"
 import SimChip from "../../Images/simchip.png"
 import Wifi from "../../Images/wifi.png"
+
+import Google from "../../Images/Brand-Logos/Google.png"
+import Amazon from "../../Images/Brand-Logos/Amazon.png"
+import Figma from "../../Images/Brand-Logos/Figma.png"
+import Instagram from "../../Images/Brand-Logos/Instagram.png"
+import Netflix from "../../Images/Brand-Logos/Netflix.png"
+
 import SubscriptionCard from "./SubscriptionCard/SubscriptionCard.jsx";
+import {useState, useEffect} from "react";
 
 const SecondMobile = () => {
 
+    const secondMobileData = {
+        card1: {
+            brandName: "Google",
+            brandLogo: Google,
+            date: "4 Sep",
+            price: "1290"
+        },
+        card2: {
+            brandName: "Amazon",
+            brandLogo: Amazon,
+            date: "10 Jan",
+            price: "1990"
+        },
+        card3: {
+            brandName: "Netflix",
+            brandLogo: Netflix,
+            date: "5 Mar",
+            price: "100"
+        },
+        card4: {
+            brandName: "Instagram",
+            brandLogo: Instagram,
+            date: "10 May",
+            price: "190"
+        },
+        card5: {
+            brandName: "Figma",
+            brandLogo: Figma,
+            date: "15 Jul",
+            price: "1500"
+        }
+    }
+
+    const [subscriptionData, setSubscriptionData] = useState(secondMobileData);
+    const [stylesAreReady, setStylesAreReady] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSubscriptionData((prev) => {
+                const entries = Object.entries(prev);
+                const [first, ...rest] = entries;
+                return Object.fromEntries([...rest, first]);
+
+
+            })
+        }, 3000)
+
+        return () => {
+            clearInterval(interval)
+        }
+    }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setStylesAreReady(true);
+        }, 100)
+
+        return () => {
+            clearInterval(interval)
+        }
+    }, []);
+
     const options = { day: "2-digit", month: "short", year: "numeric" };
     const currentDate = new Date().toLocaleDateString("en-UK", options);
-
 
     return (
         <div className="mobile-container">
@@ -79,7 +148,11 @@ const SecondMobile = () => {
                     </div>
                     <div className="subscription-list-container">
                         <div className="subscription-scroll">
-                            <SubscriptionCard />
+                            {Object.entries(subscriptionData).map(([key, card], index) => (
+                                <div key={key} className={` subscription-card ${index === 0 && stylesAreReady ? "swipe-left" : ""}`}>
+                                    <SubscriptionCard brandLogo={card.brandLogo} brandName={card.brandName} date={card.date} price={card.price} />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

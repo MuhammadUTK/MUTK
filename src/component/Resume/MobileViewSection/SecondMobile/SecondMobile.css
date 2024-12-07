@@ -290,7 +290,6 @@
     font-size: 0.8rem;
     font-weight: 800;
     color: #d76d6e;
-    background-color: #fdca66;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,10 +309,21 @@
     height: 100%;
 }
 
+.subscription-card {
+    position: relative;
+    width: 80%;
+    height: 25%;
+    margin: 5px auto;
+}
 
+.subscription-card:first-child {
+    transition: transform 0.8s ease-in-out 2.1s, opacity 0.8s ease-in-out 2.1s;
+}
 
-
-
+.subscription-card.swipe-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
 
 .mobile-frame__button--power {
     position: absolute;
