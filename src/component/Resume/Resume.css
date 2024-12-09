@@ -1,10 +1,12 @@
 .mutk-website {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-
-    transition: transform 1.5s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.mutk-hero-section .mutk-mobile-section {
-    scroll-snap-align: start;
+.mutk-hero-section, .mutk-mobile-section, .mutk-card-section {
+    width: 100vw;
+    height: 100vh;
 }

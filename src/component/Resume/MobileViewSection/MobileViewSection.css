@@ -1,7 +1,7 @@
 .card-section {
     height: 100vh;
     position: relative;
-    background: radial-gradient(#fbc29b, #fff3e9);
+    background-color: #faf8f5;
     overflow: hidden;
 }
 

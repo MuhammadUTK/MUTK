@@ -31,6 +31,11 @@ function HeroSection() {
                             <button type="submit">Get Started</button>
                         </form>
                     </div>
+                    <div className="mutk-name">
+                        <h1>
+                            Muhammad Usman Tariq Khan
+                        </h1>
+                    </div>
                 </div>
                 <div className="resume-hero-graphics">
                     <div className="orbit-container">

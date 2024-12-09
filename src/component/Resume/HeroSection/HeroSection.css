@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .resume-intro-text {
@@ -43,10 +43,10 @@
 }
 
 .hero-input-container {
-    position: relative;
+    position: absolute;
     width: 80%;
     height: 15%;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%);
     border-radius: 15px;
@@ -89,6 +89,25 @@
 .hero-form button:hover {
     background: #ff4a1e;
 }
+
+.mutk-name {
+    position: absolute;
+    top: 70%;
+    width: 80%;
+    height: 25%;
+    background-color: #d76a6b;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+
 
 .resume-hero-graphics {
     position: relative;

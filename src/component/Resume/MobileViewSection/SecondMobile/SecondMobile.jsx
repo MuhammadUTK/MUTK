@@ -69,7 +69,7 @@ const SecondMobile = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setStylesAreReady(true);
-        }, 100)
+        }, 50)
 
         return () => {
             clearInterval(interval)
