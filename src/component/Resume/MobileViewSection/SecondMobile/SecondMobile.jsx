@@ -56,8 +56,6 @@ const SecondMobile = () => {
                 const entries = Object.entries(prev);
                 const [first, ...rest] = entries;
                 return Object.fromEntries([...rest, first]);
-
-
             })
         }, 3000)
 

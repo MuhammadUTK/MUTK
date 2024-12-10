@@ -3,6 +3,7 @@
     height: 100%;
     background-color: #faf8f5;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .card-section-heading {
@@ -30,19 +31,15 @@
     align-items: center;
     padding-left: 2rem;
     font-family: "Bahnschrift", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .card-bar h1 {
     pointer-events: none;
 }
 
-/*.bar-one, .bar-two, .bar-three, .bar-four, .bar-five {*/
-/*    position: relative;*/
-/*}*/
-
 .popup-image-container {
-    pointer-events: none;
+    /*pointer-events: none;*/
     position: absolute;
     border-radius: 10px;
     width: 340px;
@@ -52,6 +49,19 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    transform: scale(0.2);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.popup-image-container.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup-image-container.hidden {
+    opacity: 0;
+    transform: scale(0.2);
 }
 
 .popup-image-container img {
