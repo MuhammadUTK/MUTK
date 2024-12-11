@@ -1,16 +1,20 @@
 import "./CardDisplaySection.css"
-import Moose from "../Images/Image-Hover/Moose.jpg"
-import BlackMoose from "../Images/Image-Hover/Black_Moose.jpg"
-import Cat from "../Images/Image-Hover/Cat.jpg"
-import House from "../Images/Image-Hover/House.jpg"
-import Waterfall from "../Images/Image-Hover/Waterfall.jpg"
+import Mercury from "../Images/Image-Hover/Mercury.jpg"
+import Venus from "../Images/Image-Hover/Venus.jpg"
+import Earth from "../Images/Image-Hover/Earth.jpg"
+import Mars from "../Images/Image-Hover/Mars.jpg"
+import Jupiter from "../Images/Image-Hover/Jupiter.jpg"
+import Saturn from "../Images/Image-Hover/Saturn.jpg"
+import Uranus from "../Images/Image-Hover/Uranus.jpg"
+import Neptune from "../Images/Image-Hover/Neptune.jpg"
+import Galaxy from "../Images/Image-Hover/Galaxy.jpg"
 import {useState, useRef} from "react";
 
 const CardDisplaySection = () => {
 
     const [currentCursor, setCurrentCursor] = useState({x: 0, y: 0});
     const [isHovering, setHovering] = useState(false);
-    const [imageIndex, setImageIndex] = useState(0);
+    const [sliderTranslate, setSliderTranslate] = useState(0);
     const cardRef = useRef(null);
 
 
@@ -21,31 +25,29 @@ const CardDisplaySection = () => {
         const sectionDetails = cardRef.current.getBoundingClientRect();
 
         if ((Math.floor(sectionDetails.height) - (event.clientY - Math.floor(sectionDetails.top) + 5)) >= 290 &&
-            ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) >= 340)) {
+            ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) >= 360)) {
             setCurrentCursor({x: event.clientX - Math.floor(sectionDetails.left) + 5,
                                     y: event.clientY - Math.floor(sectionDetails.top) + 5});
         }
         else if ((Math.floor(sectionDetails.height) - (event.clientY - Math.floor(sectionDetails.top) + 5)) < 290 &&
-        ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) >= 340)) {
+        ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) >= 360)) {
             setCurrentCursor({x: event.clientX - Math.floor(sectionDetails.left) + 5,
                 y: event.clientY - Math.floor(sectionDetails.top) - 290});
         }
         else if ((Math.floor(sectionDetails.height) - (event.clientY - Math.floor(sectionDetails.top) + 5)) >= 290 &&
-            ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) < 340)) {
-            setCurrentCursor({x: event.clientX - Math.floor(sectionDetails.left) - 345,
+            ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) < 360)) {
+            setCurrentCursor({x: event.clientX - Math.floor(sectionDetails.left) - 365,
                 y: event.clientY - Math.floor(sectionDetails.top) + 5});
         }
         else if ((Math.floor(sectionDetails.height) - (event.clientY - Math.floor(sectionDetails.top) + 5)) < 290 &&
-            ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) < 340)) {
-            setCurrentCursor({x: event.clientX - Math.floor(sectionDetails.left) - 345,
+            ((Math.floor(sectionDetails.width) - (event.clientX - Math.floor(sectionDetails.left) + 5)) < 360)) {
+            setCurrentCursor({x: event.clientX - Math.floor(sectionDetails.left) - 365,
                 y: event.clientY - Math.floor(sectionDetails.top) - 290});
         }
 
-        console.log(currentCursor.x, currentCursor.y, sectionDetails);
-
         const singleBlockHeight = Math.floor(sectionDetails.height) / Object.keys(imagesData).length;
-        setImageIndex( Math.max(0, Math.floor(( event.clientY - sectionDetails.top ) / singleBlockHeight)));
-        console.log(sectionDetails.height, Object.keys(imagesData).length, singleBlockHeight, imageIndex, event.clientY);
+
+        setSliderTranslate( (Math.max(0, Math.floor(( event.clientY - sectionDetails.top ) / singleBlockHeight))) * 270);
 
     }
 
@@ -57,34 +59,36 @@ const CardDisplaySection = () => {
 
     const imagesData = [
         {
-            imageURL: Cat,
-            photographerName: "Bastian Schulz",
-            photographerURL: "https://unsplash.com/@buzztea?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-            imageUnsplashURL: "https://unsplash.com/photos/a-close-up-of-a-cat-looking-at-the-camera-hJmpKUQUIXw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            imageURL: Mercury,
+            planetName: "Mercury"
         },
         {
-            imageURL: House,
-            photographerName: "Daniel Seßler",
-            photographerURL: "https://unsplash.com/@danielsessler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-            imageUnsplashURL: "https://unsplash.com/photos/a-small-village-on-a-rocky-shore-with-mountains-in-the-background-pX5PxHC1aEM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            imageURL: Venus,
+            planetName: "Venus"
         },
         {
-            imageURL: Moose,
-            photographerName: "Omar Ramadan",
-            photographerURL: "https://unsplash.com/@omarvellous14?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-            imageUnsplashURL: "https://unsplash.com/photos/a-large-moose-laying-on-top-of-a-dirt-field-76bZMshUstE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            imageURL: Earth,
+            planetName: "Earth"
         },
         {
-            imageURL: BlackMoose,
-            photographerName: "Shivam Kumar",
-            photographerURL: "https://unsplash.com/@krishnadigitalcolorphotostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-            imageUnsplashURL: "https://unsplash.com/photos/black-moose-lying-on-field-during-daytime-MVIqwQvkwG4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            imageURL: Mars,
+            planetName: "Mars"
         },
         {
-            imageURL: Waterfall,
-            photographerName: "Danijel Škabić",
-            photographerURL: "https://unsplash.com/@silentphocro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-            imageUnsplashURL: "https://unsplash.com/photos/a-waterfall-with-trees-around-it-4M81--ecrIo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            imageURL: Jupiter,
+            planetName: "Jupiter"
+        },
+        {
+            imageURL: Saturn,
+            planetName: "Saturn"
+        },
+        {
+            imageURL: Uranus,
+            planetName: "Uranus"
+        },
+        {
+            imageURL: Neptune,
+            planetName: "Neptune"
         }
     ]
 
@@ -93,31 +97,53 @@ const CardDisplaySection = () => {
     return (
         <div className="card-display-section-container">
             <div className="card-section-heading">
-                <h1>PopBar Gallery</h1>
+                <h1>Space PopBar Gallery</h1>
             </div>
-            <div className="card-section-content" ref={cardRef} onMouseMove={mouseMove} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+            <div className="card-section-content" ref={cardRef} onMouseMove={mouseMove} onMouseEnter={mouseEnter}
+                 onMouseLeave={mouseLeave}>
                 <div className="card-bar bar-one">
-                    <h1>Float Frames</h1>
+                    <h1>Mercury</h1>
                 </div>
                 <div className="card-bar bar-two">
-                    <h1>Image Puff</h1>
+                    <h1>Venus</h1>
                 </div>
                 <div className="card-bar bar-three">
-                    <h1>Hover Portal</h1>
+                    <h1>Earth</h1>
                 </div>
                 <div className="card-bar bar-fouth">
-                    <h1>Bar Hopper</h1>
+                    <h1>Mars</h1>
                 </div>
                 <div className="card-bar bar-five">
-                    <h1>Peek-a-Bar</h1>
+                    <h1>Jupiter</h1>
                 </div>
-                <div className={`popup-image-container ${isHovering ? "visible" : "hidden"}`} style={{left: `${currentCursor.x}px`, top: `${currentCursor.y}px`}}>
-                        <img src={imagesData[imageIndex].imageURL} alt=""/>
-                        <p className="popup-image-text">
-                            Photo by<a href={imagesData[imageIndex].photographerURL}>&nbsp;{imagesData[imageIndex].photographerName}</a>&nbsp;on&nbsp;<a href={imagesData[imageIndex].imageUnsplashURL}>Unsplash</a>
-
-                        </p>
+                <div className="card-bar bar-three">
+                    <h1>Saturn</h1>
+                </div>
+                <div className="card-bar bar-fouth">
+                    <h1>Uranus</h1>
+                </div>
+                <div className="card-bar bar-five">
+                    <h1>Neptune</h1>
+                </div>
+                <div className={`popup-image-container ${isHovering ? "visible" : "hidden"}`}
+                     style={{left: `${currentCursor.x}px`, top: `${currentCursor.y}px`}}>
+                    <div className="popup-image-slider-container">
+                        {
+                            imagesData.map((item, index) => (
+                                <div className="popup-slider-image" key={item.planetName} style={{
+                                    transform: `translateY(-${sliderTranslate}px)`,
+                                    transition: "transform 0.3s ease"
+                                }}>
+                                    <img src={imagesData[index].imageURL} alt=""/>
+                                    <p className="popup-image-text">
+                                        {imagesData[index].planetName}
+                                    </p>
+                                </div>
+                            ))
+                        }
                     </div>
+
+                </div>
             </div>
         </div>
     )

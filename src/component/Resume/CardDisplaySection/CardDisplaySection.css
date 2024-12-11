@@ -1,12 +1,14 @@
 .card-display-section-container {
     width: 80%;
     height: 100%;
-    background-color: #faf8f5;
+    background-color: #1e1e1f;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .card-section-heading {
+    padding-left: 10px;
     width: 100%;
     height: 15%;
     display: flex;
@@ -14,44 +16,47 @@
     font-family: "Roboto", sans-serif;
     letter-spacing: 2px;
     font-size: 2rem;
-    border-bottom: 1px solid #d76a6b;
+    border-bottom: 1px solid #363636;
+    color: #faf8f5;
 }
 
 .card-section-content {
     width: 100%;
-    height: 80%;
+    height: 85%;
     position: relative;
 }
 
 .card-bar {
     width: 100%;
-    height: 20%;
+    height: calc(100% / 8);
     border-bottom: 1px solid rgba(56, 56, 56, 0.3);
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 2rem;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.3rem;
+    font-weight: 300;
 }
 
 .card-bar h1 {
+    color: #fdc663;
     pointer-events: none;
 }
 
 .popup-image-container {
-    /*pointer-events: none;*/
     position: absolute;
     border-radius: 10px;
-    width: 340px;
+    width: 360px;
     height: 290px;
-    background-color: rgba(0, 0, 0, 1);
-    padding: 10px;
+    border: 10px solid #202a30;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    background-color: #202a30;
     transform: scale(0.2);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
 }
 
 .popup-image-container.visible {
@@ -64,18 +69,34 @@
     transform: scale(0.2);
 }
 
+.popup-image-slider-container {
+    position: absolute;
+}
+
+.popup-slider-image {
+    width: 340px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .popup-image-container img {
-    width: 320px;
+    width: 340px;
     height: 240px;
 }
 
 .popup-image-text {
-    width: 320px;
+    width: 340px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
-    background-color: #f8cd87;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #124e65;
+    background-color: #d4d9d5;
 }
 
