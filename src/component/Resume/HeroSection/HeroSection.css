@@ -9,110 +9,153 @@
 }
 
 .resume-intro {
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: #faf8f5;
+    background-color: #1f272f;
     position: relative;
     font-family: "Nunito", sans-serif;
 }
 
-.resume-intro-heading {
+.resume-intro-background {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    background-color: #00bd96;
+    filter: blur(80px);
+    opacity: 0.1;
+}
+
+.resume-intro-text {
+    color: #faf8f5;
+    width: 80%;
+    height: 40%;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    width: 80%;
-    height: 30%;
-    text-align: left;
+    font-size: 1.3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
+    align-items: start;
 }
 
-.resume-intro-text {
+.resume-intro-heading {
     width: 80%;
-    height: 25%;
+    padding: 10px 0;
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+.resume-name {
+    font-weight: 800;
+    font-size: 2.3rem;
+    background: #00bd96;
+    background-clip: text;
+    color: transparent;
+    font-family: "Roboto", sans-serif;
+}
+
+.intro-profession-heading {
+    color: #ff719c;
+}
+
+.resume-intro-buttontype {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-input-container {
-    position: absolute;
     width: 80%;
     height: 15%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.resume-button {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-form input {
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-    width: 70%;
-    max-width: 400px;
-    background: #ffffff;
-    color: #333;
-}
-
-.hero-form button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background: #ff6a3d;
-    border: none;
-    border-radius: 25px;
-    color: #ffffff;
+    margin-left: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    color: #faf8f5;
+    background-color: #018f73;
 }
 
-.hero-form button:hover {
-    background: #ff4a1e;
+.resume-button.hire {
+    background: linear-gradient(90deg, #006c4c, #00ac91);
 }
 
-.mutk-name {
-    position: absolute;
-    top: 70%;
+.resume-button.explore {
+    background: linear-gradient(270deg, #006c4c, #00ac91);
+}
+
+.resume-stats {
     width: 80%;
-    height: 25%;
-    background-color: #d76a6b;
+    height: 30%;
+    position: absolute;
+    top: 60%;
     left: 50%;
     transform: translate(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    overflow: hidden;
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
 }
+
+.resume-stats-text {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    color: #faf8f5;
+    align-items: end;
+    padding-left: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+.resume-stats-content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.resume-stats-block {
+    width: calc((100% - 9px)/4);
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #faf8f5;
+    background-clip: text;
+    color: transparent;
+}
+
+.resume-stats-block h1 {
+    padding: 10px 0;
+}
+
+.resume-stats-divider {
+    width: 3px;
+    height: 80%;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #006c4c, #4bffe1);
+}
+
+
 
 
 
 .resume-hero-graphics {
     position: relative;
-    width: 60%;
-    background: linear-gradient(to right, #faf8f5 10%, #fc775a 100%);
+    width: 50%;
+    background: #1f272f;
     padding: 1rem;
     overflow: hidden;
 }
@@ -243,23 +286,23 @@
 }
 
 .orbit-external-container:nth-child(1) {
-    transform: rotate(-15deg) translate(280px) rotate(15deg);
+    transform: rotate(-18deg) translate(280px) rotate(18deg);
 }
 
 .orbit-external-container:nth-child(2) {
-    transform: rotate(0deg) translate(280px) rotate(0deg);
+    transform: rotate(-90deg) translate(280px) rotate(90deg);
 }
 
 .orbit-external-container:nth-child(3) {
-    transform: rotate(15deg) translate(280px) rotate(-15deg);
+    transform: rotate(-162deg) translate(280px) rotate(162deg);
 }
 
 .orbit-external-container:nth-child(4) {
-    transform: rotate(30deg) translate(280px) rotate(-30deg);
+    transform: rotate(-234deg) translate(280px) rotate(234deg);
 }
 
 .orbit-external-container:nth-child(5) {
-    transform: rotate(45deg) translate(280px) rotate(-45deg);
+    transform: rotate(-306deg) translate(280px) rotate(306deg);
 }
 
 .orbit-external-text {

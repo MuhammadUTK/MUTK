@@ -1,4 +1,4 @@
-import "./CardDisplaySection.css"
+import "./ImageHoverSection.css"
 import Mercury from "../Images/Image-Hover/Mercury.jpg"
 import Venus from "../Images/Image-Hover/Venus.jpg"
 import Earth from "../Images/Image-Hover/Earth.jpg"
@@ -7,10 +7,9 @@ import Jupiter from "../Images/Image-Hover/Jupiter.jpg"
 import Saturn from "../Images/Image-Hover/Saturn.jpg"
 import Uranus from "../Images/Image-Hover/Uranus.jpg"
 import Neptune from "../Images/Image-Hover/Neptune.jpg"
-import Galaxy from "../Images/Image-Hover/Galaxy.jpg"
 import {useState, useRef} from "react";
 
-const CardDisplaySection = () => {
+const ImageHoverSection = () => {
 
     const [currentCursor, setCurrentCursor] = useState({x: 0, y: 0});
     const [isHovering, setHovering] = useState(false);
@@ -149,4 +148,4 @@ const CardDisplaySection = () => {
     )
 }
 
-export default CardDisplaySection;
+export default ImageHoverSection;

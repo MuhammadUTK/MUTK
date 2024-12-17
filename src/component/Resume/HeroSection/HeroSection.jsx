@@ -6,11 +6,6 @@ import Currency from "../Images/Orbit/currency.png"
 import Layout from "../Images/Orbit/layout.png"
 import Social from "../Images/Orbit/social.png"
 import Smartphone from "../Images/Orbit/smartphone.png"
-import Setting from "../Images/Orbit-External/Setting.png"
-import Drawing from "../Images/Orbit-External/Drawing.png"
-import Database from "../Images/Orbit-External/Database.png"
-import Robot from "../Images/Orbit-External/telecommuting.png"
-import Communicate from "../Images/Orbit-External/bluetooth.png"
 
 
 function HeroSection() {
@@ -18,23 +13,48 @@ function HeroSection() {
         <div className="resume-hero-container">
             <div className="resume-mainbody">
                 <div className="resume-intro">
-                    <div className="resume-intro-heading">
-                        <h1>Crafting Seamless Digital Journeys</h1>
+                    <div className="resume-intro-background">
                     </div>
                     <div className="resume-intro-text">
-                        <p>I'm a web developer dedicated to creating seamless, responsive, and user-friendly websites. With expertise in modern technologies and an eye for design, I build scalable solutions that bring ideas to life. Let's create something exceptional together.</p>
+                        <p>Hello there, Welcome to my Portfolio!</p>
+                        <div className="resume-intro-heading">
+                            <p>Crafting Seamless Digital Journeys with <b className="resume-name" >Usman Tariq</b></p>
+                            <p className="intro-profession-heading">A Front End Web Developer</p>
+                        </div>
                     </div>
-                    <div className="hero-input-container">
-                        <form className="hero-form">
-                            <input type="email" placeholder="Enter your email to begin your journey"
-                                   required/>
-                            <button type="submit">Get Started</button>
-                        </form>
+                    <div className="resume-intro-buttontype">
+                        <div className="resume-button hire">
+                            Hire Me
+                        </div>
+                        <div className="resume-button explore">
+                            Explore Site
+                        </div>
                     </div>
-                    <div className="mutk-name">
-                        <h1>
-                            Muhammad Usman Tariq Khan
-                        </h1>
+                    <div className="resume-stats">
+                        <div className="resume-stats-text">
+                            <h2>Empowering Brands with Code and Creativity</h2>
+                        </div>
+                        <div className="resume-stats-content">
+                            <div className="resume-stats-block">
+                                <h1>3k+</h1>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div className="resume-stats-divider"></div>
+                            <div className="resume-stats-block">
+                                <h1>7k+</h1>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div className="resume-stats-divider"></div>
+                            <div className="resume-stats-block">
+                                <h1>10+</h1>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div className="resume-stats-divider"></div>
+                            <div className="resume-stats-block">
+                                <h1>950</h1>
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="resume-hero-graphics">
@@ -51,28 +71,6 @@ function HeroSection() {
                             <img src={Social} alt="" className="orbit-img"/>
                             <img src={Currency} alt="" className="orbit-img"/>
                             <img src={Layout} alt="" className="orbit-img"/>
-                        </div>
-                        <div className="orbit-external">
-                            <div className="orbit-external-container">
-                                <img src={Setting} alt="" className="orbit-external-img"/>
-                                <p className="orbit-external-text">Web Solutions</p>
-                            </div>
-                            <div className="orbit-external-container">
-                                <img src={Database} alt="" className="orbit-external-img"/>
-                                <p className="orbit-external-text">Responsiveness</p>
-                            </div>
-                            <div className="orbit-external-container">
-                                <img src={Drawing} alt="" className="orbit-external-img"/>
-                                <p className="orbit-external-text">Design, Develop</p>
-                            </div>
-                            <div className="orbit-external-container">
-                                <img src={Robot} alt="" className="orbit-external-img"/>
-                                <p className="orbit-external-text">Code Crafted</p>
-                            </div>
-                            <div className="orbit-external-container">
-                                <img src={Communicate} alt="" className="orbit-external-img"/>
-                                <p className="orbit-external-text">Web Connectivity</p>
-                            </div>
                         </div>
                     </div>
                     <div className="resume-hero-cloud">
@@ -96,3 +94,8 @@ function HeroSection() {
 }
 
 export default HeroSection
+
+
+// Crafting Seamless Digital Journeys
+
+// I'm a web developer dedicated to creating seamless, responsive, and user-friendly websites. With expertise in modern technologies and an eye for design, I build scalable solutions that bring ideas to life. Let's create something exceptional together.

@@ -4,13 +4,17 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
-.mutk-hero-section, .mutk-mobile-section, .mutk-card-section {
+.mutk-hero-section, .mutk-mobile-section, .mutk-card-section, .mutk-image-section {
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
-.mutk-card-section {
-    background-color: #faf8f5;
+.mutk-image-section {
+    background-size: cover;
+    background-position: center;
+    background-image: url("./Images/Image-Hover/Moon.jpg");
 }
