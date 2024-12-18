@@ -96,33 +96,112 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.convincing-infographics-screen {
-    width: 80%;
-    height: 90%;
-    position: absolute;
-}
-
-.convincing-infographics-screen img {
+.convincing-infographics-gradient {
+    width: 70%;
+    height: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 65%;
-    object-fit: contain;
+    background-color: #00bd96;
+    filter: blur(50px);
+    opacity: 0.3;
 }
 
+.layout-sample-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
 
+.layout-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(65deg) skew(25deg, -35deg);
+    width: 600px;
+    height: 600px;
+    border: 1px solid #007861;
+    border-radius: 50%;
+}
 
+.layout-sample {
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+    transform:skewY(-15deg);
+}
 
+.layout-sample img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.sample-one {
+    position: absolute;
+    top: 35%;
+    left: 69%;
+}
 
+.sample-two {
+    position: absolute;
+    top: 51%;
+    left: 42%;
+}
 
+.sample-three {
+    position: absolute;
+    top: 17%;
+    left: 74%;
+}
 
+.sample-four {
+    position: absolute;
+    top: 33%;
+    left: 47%;
+}
 
+.sample-five {
+    position: absolute;
+    top: 49%;
+    left: 20%;
+}
 
+.sample-six {
+    position: absolute;
+    top: 7%;
+    left: 64%;
+}
+
+.sample-seven {
+    position: absolute;
+    top: 23%;
+    left: 37%;
+}
+
+.sample-eight {
+    position: absolute;
+    top: 39%;
+    left: 10%;
+}
+
+.sample-nine {
+    position: absolute;
+    top: 8%;
+    left: 38%;
+}
+
+.sample-ten {
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
 
 
 
@@ -146,12 +225,12 @@
 
 .convincing-text-heading {
     width: 100%;
-    height: 30%;
-    padding-left: 15px;
+    height: 20%;
+    padding-left: 35px;
     color: #00bd96;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
 }
 
 .convincing-text-content {

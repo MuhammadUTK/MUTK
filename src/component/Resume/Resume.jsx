@@ -10,7 +10,7 @@ function Resume() {
 
     return (
         <>
-            <div className="mutk-website">v
+            <div className="mutk-website">
                 <div className="mutk-hero-section">
                     <NavbarResume/>
                     <HeroSection/>
