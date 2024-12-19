@@ -4,21 +4,44 @@ import Drawing from "../Images/Orbit-External/Drawing.png"
 import Database from "../Images/Orbit-External/Database.png"
 import Robot from "../Images/Orbit-External/telecommuting.png"
 import Communicate from "../Images/Orbit-External/bluetooth.png"
-import LayoutOne from "../Images/Convincing/layout1.png"
-import LayoutTwo from "../Images/Convincing/layout2.png"
-import LayoutThree from "../Images/Convincing/layout3.png"
-import LayoutFour from "../Images/Convincing/layout4.png"
-import LayoutFive from "../Images/Convincing/layout5.png"
-import LayoutSix from "../Images/Convincing/layout6.png"
-import LayoutSeven from "../Images/Convincing/layout7.png"
-import LayoutEight from "../Images/Convincing/layout8.png"
-import LayoutNine from "../Images/Convincing/layout9.png"
-import LayoutTen from "../Images/Convincing/layout10.png"
+import Layout1 from "../Images/Convincing/layout1.png"
+import Layout2 from "../Images/Convincing/layout2.png"
+import Layout3 from "../Images/Convincing/layout4.png"
+import Layout4 from "../Images/Convincing/layout3.png"
+import Layout5 from "../Images/Convincing/layout5.png"
+import Layout6 from "../Images/Convincing/layout9.png"
+import Layout7 from "../Images/Convincing/layout7.png"
+import Layout8 from "../Images/Convincing/layout8.png"
+import Layout9 from "../Images/Convincing/layout6.png"
+import Layout10 from "../Images/Convincing/layout10.png"
 
 
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 function InformationSection() {
+
+    const imagesList = [Layout1, Layout2, Layout3, Layout4, Layout5, Layout6, Layout7, Layout8, Layout9, Layout10]
+
+    const sampleLayouts = [ "sample-one", "sample-two", "sample-three", "sample-four", "sample-five", "sample-six", "sample-seven", "sample-eight", "sample-nine", "sample-ten" ]
+
+    const [layoutPosition, setLayoutPosition] = useState(sampleLayouts)
+    const [animationKey, setAnimationKey] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setLayoutPosition((prev) => {
+                const sampleLayoutCopy = [...prev]
+                const lastSample = sampleLayoutCopy.pop();
+                sampleLayoutCopy.unshift(lastSample);
+                console.log("New List", sampleLayoutCopy)
+                return sampleLayoutCopy;
+            })
+            setAnimationKey(prevKey => prevKey + 1)
+        }, 3000)
+
+        return () => {clearInterval(interval)}
+    }, []);
+
     return (
         <div className="service-display-section">
             <div className="service-display-heading">
@@ -76,41 +99,11 @@ function InformationSection() {
                     <div className="convincing-infographics-gradient"></div>
                     <div className="layout-sample-container">
                         <div className="layout-orbit"></div>
-
-                        <div className="layout-sample sample-ten">
-                            <img src={LayoutTen} alt=""/>
-                        </div>
-                        <div className="layout-sample sample-nine">
-                            <img src={LayoutFive} alt=""/>
-                        </div>
-
-                        <div className="layout-sample sample-eight">
-                            <img src={LayoutSeven} alt=""/>
-                        </div>
-                        <div className="layout-sample sample-seven">
-                            <img src={LayoutEight} alt=""/>
-                        </div>
-                        <div className="layout-sample sample-six">
-                            <img src={LayoutSix} alt=""/>
-                        </div>
-
-                        <div className="layout-sample sample-five">
-                            <img src={LayoutNine} alt=""/>
-                        </div>
-                        <div className="layout-sample sample-four">
-                            <img src={LayoutFour} alt=""/>
-                        </div>
-                        <div className="layout-sample sample-three">
-                            <img src={LayoutThree} alt=""/>
-                        </div>
-
-
-                        <div className="layout-sample sample-two">
-                            <img src={LayoutTwo} alt=""/>
-                        </div>
-                        <div className="layout-sample sample-one">
-                            <img src={LayoutOne} alt=""/>
-                        </div>
+                        {layoutPosition.map((item, index) => (
+                            <div className={`layout-sample ${item}`} key={`${item}-${animationKey}`}>
+                                <img src={imagesList[index]} alt=""/>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className="convincing-text">

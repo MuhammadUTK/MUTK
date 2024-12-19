@@ -147,61 +147,230 @@
     position: absolute;
     top: 35%;
     left: 69%;
+    z-index: 4;
+    animation: one-to-ten 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes one-to-ten {
+    0% {
+        top: 35%;
+        left: 69%;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        top: 17%;
+        left: 100%;
+    }
+    51%{
+        z-index: 1;
+        opacity: 0;
+        top: -8%;
+        left: 65%;
+    }
+    100% {
+        z-index: 1;
+        opacity: 1;
+        top: 8%;
+        left: 38%;
+    }
 }
 
 .sample-two {
     position: absolute;
     top: 51%;
     left: 42%;
+    z-index: 4;
+    animation: two-to-one 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes two-to-one {
+    0% {
+        top: 51%;
+        left: 42%;
+    }
+    100% {
+        top: 35%;
+        left: 69%;
+    }
 }
 
 .sample-three {
     position: absolute;
-    top: 17%;
-    left: 74%;
+    top: 49%;
+    left: 20%;
+    z-index: 3;
+    animation: three-to-two 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes three-to-two {
+    0% {
+        top: 49%;
+        left: 20%;
+    }
+    40% {
+        z-index: 4;
+    }
+    100% {
+        z-index: 4;
+        top: 51%;
+        left: 42%;
+    }
 }
 
 .sample-four {
     position: absolute;
     top: 33%;
     left: 47%;
+    z-index: 3;
+    animation: four-to-three 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes four-to-three {
+    0% {
+        top: 33%;
+        left: 47%;
+    }
+    100% {
+        top: 49%;
+        left: 20%;
+    }
 }
 
 .sample-five {
     position: absolute;
-    top: 49%;
-    left: 20%;
+    top: 17%;
+    left: 74%;
+    z-index: 3;
+    animation: five-to-four 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes five-to-four {
+    0% {
+        top: 17%;
+        left: 74%;
+    }
+    100% {
+        top: 33%;
+        left: 47%;
+    }
 }
 
 .sample-six {
     position: absolute;
     top: 7%;
     left: 64%;
+    z-index: 2;
+    animation: six-to-five 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes six-to-five {
+    0% {
+        top: 7%;
+        left: 64%;
+    }
+    90% {
+        z-index: 3;
+    }
+    100% {
+        z-index: 3;
+        top: 17%;
+        left: 74%;
+    }
 }
 
 .sample-seven {
     position: absolute;
     top: 23%;
     left: 37%;
+    z-index: 2;
+    animation: seven-to-six 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes seven-to-six {
+    0% {
+        top: 23%;
+        left: 37%;
+    }
+    100% {
+        top: 7%;
+        left: 64%;
+    }
 }
 
 .sample-eight {
     position: absolute;
     top: 39%;
     left: 10%;
+    z-index: 2;
+    animation: eight-to-seven 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes eight-to-seven {
+    0% {
+        top: 39%;
+        left: 10%;
+    }
+    100% {
+        top: 23%;
+        left: 37%;
+    }
 }
 
 .sample-nine {
     position: absolute;
-    top: 8%;
-    left: 38%;
+    top: 23%;
+    left: 11%;
+    z-index: 1;
+    animation: nine-to-eight 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes nine-to-eight {
+    0% {
+        top: 23%;
+        left: 11%;
+    }
+    90% {
+        z-index: 2;
+    }
+    100% {
+        z-index: 2;
+        top: 39%;
+        left: 10%;
+    }
 }
 
 .sample-ten {
     position: absolute;
-    top: 23%;
-    left: 11%;
+    top: 8%;
+    left: 38%;
+    z-index: 1;
+    animation: ten-to-nine 2s ease-in-out;
+    animation-delay: 1s;
 }
+
+@keyframes ten-to-nine {
+    0% {
+        top: 8%;
+        left: 38%;
+    }
+    100% {
+        top: 23%;
+        left: 11%;
+    }
+}
+
+
+
 
 
 
