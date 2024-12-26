@@ -160,7 +160,7 @@
 
 .hero-animation-container {
     padding: 1rem;
-    width: 80%;
+    width: 90%;
     height: 80%;
     background: #1f272f;
     overflow: hidden;
@@ -176,7 +176,7 @@
 }
 
 .project-details {
-    grid-row: 1 / 3;
+    grid-row: 2 / 4;
 }
 
 .project-title {
@@ -208,46 +208,15 @@
     font-weight: 900;
 }
 
-.project-bullet-facts {
-    width: 100%;
-    height: 45%;
-    padding: 5px 1rem;
+.client-description {
+    overflow: hidden;
 }
-
-.bullet-facts {
-    width: 100%;
-    height: calc(100%/2);
-    display: flex;
-    align-items: center;
-    font-family: "Nunito", sans-serif;
-    font-size: 0.8rem;
-}
-
-.bullet-facts p {
-    color: #faf8f5;
-    font-weight: normal;
-}
-
-.bullet-facts img {
-    width: 15px;
-    height: 15px;
-}
-
-
-.bullet-facts .fact-title {
-    color: #00bd96;
-    font-weight: 800;
-}
-
-
-
-
-
 
 .client-name-title {
     width: 100%;
     height: 30%;
     font-family: "Roboto", sans-serif;
+    background-color: #161c21;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
@@ -295,24 +264,107 @@
     height: 20%;
 }
 
-.client-image {
+.layout-image {
     grid-row: 1 / 4;
     overflow: hidden;
+    position: relative;
 }
 
-.client-image img {
+.layout-image-slider {
+    display: flex;
+    height: 100%;
+    width: calc(100% * 10);
+}
+
+.layout-slide {
+    height: 100%;
+    width: 10%;
+}
+
+.layout-slide:first-child {
+    animation: layout-slider 1s ease-in-out;
+    animation-delay: 3s;
+}
+
+@keyframes layout-slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.layout-slide:nth-child(2n) {
+    animation: layout-slider 1s ease-in-out;
+    animation-delay: 3s;
+}
+
+@keyframes layout-slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.layout-image img {
     width: 100%;
     height: 100%;
+    /*object-fit: cover;*/
     transition: 0.3s ease-in-out;
 }
 
-.client-image img:hover {
+.layout-image img:hover {
     transform: scale(1.05);
 }
 
+.project-facts {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-color: #faf8f5;
+    z-index: 2;
+    border-radius: 15px;
+}
 
-.project-layout {
-    grid-column: 1 / 3;
+.detail-block1 {
+    top: 15%;
+    right: 3%;
+}
+
+.detail-block2 {
+    top: 30%;
+    right: 3%;
+}
+
+.detail-block3 {
+    top: 45%;
+    right: 3%;
+}
+
+.project-fact-title {
+    width: 100%;
+    height: 50%;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fact-percentage {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    color: #018f73;
 }
 
 
@@ -320,7 +372,102 @@
 
 
 
+.project-statistics {
+    grid-column: 1 / 3;
+}
 
+.project-statistics-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #faf8f5;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 1px;
+}
+
+.project-statistics-content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.project-bullet-facts {
+    width: 70%;
+    height: 100%;
+    padding: 5px 1rem;
+}
+
+.bullet-facts {
+    width: 100%;
+    height: calc(100%/5);
+    display: flex;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.8rem;
+}
+
+.bullet-facts p {
+    color: #faf8f5;
+    font-weight: normal;
+}
+
+.bullet-facts img {
+    width: 15px;
+    height: 15px;
+}
+
+.bullet-facts .fact-title {
+    color: #00bd96;
+    font-weight: 800;
+}
+
+.project-review-block {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.review-block {
+    border-radius: 10px;
+    width: 90%;
+    height: 70%;
+    font-family: "Nunito", sans-serif;
+    background-color: #1f272f;
+}
+
+.review-title {
+    width: 100%;
+    height: 30%;
+    color: #ff719c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-percentage {
+    width: 100%;
+    height: 40%;
+    color: #faf8f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-description {
+    width: 100%;
+    height: 30%;
+    color: #faf8f5;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
