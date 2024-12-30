@@ -284,30 +284,17 @@ function HeroSection() {
                 </div>
                 <div className="resume-hero-graphics">
                     <div className="hero-animation-container">
-                        <div className="project-facts detail-block1">
-                            <div className="project-fact-title">
-                                <h4>Global Country Reach</h4>
+                        {projects[0].projectFacts.map((fact, index) => (
+                            <div className={`project-facts detail-block${index + 1}`}
+                                 key={`project-fact-${index}-${animationKey}`}>
+                                <div className="project-fact-title">
+                                    <h4>{fact.label}</h4>
+                                </div>
+                                <div className="fact-percentage">
+                                    <h2>{fact.value}</h2>
+                                </div>
                             </div>
-                            <div className="fact-percentage">
-                                <h2>50+</h2>
-                            </div>
-                        </div>
-                        <div className="project-facts detail-block2">
-                            <div className="project-fact-title">
-                                <h4>Monthly Active Users</h4>
-                            </div>
-                            <div className="fact-percentage">
-                                <h2>150,000</h2>
-                            </div>
-                        </div>
-                        <div className="project-facts detail-block3">
-                            <div className="project-fact-title">
-                                <h4>NFT Collections</h4>
-                            </div>
-                            <div className="fact-percentage">
-                                <h2>25,000+</h2>
-                            </div>
-                        </div>
+                        ))}
                         <div className="grid-item client-description">
                             <div className="client-name-title">
                                 <h3>Satisfied Customer</h3>
@@ -371,12 +358,12 @@ function HeroSection() {
                                     ))}
                                 </div>
                                 <div className="project-review-block">
-                                    <div className="review-block">
+                                    <div className="review-block" key={`project-review-${animationKey}`}>
                                         <div className="review-title">
                                             <h3>User Reviews</h3>
                                         </div>
                                         <div className="review-percentage">
-                                            <h1>95%</h1>
+                                            <h1>{projects[0].userReviewPercentage}%</h1>
                                         </div>
                                         <div className="review-description">
                                             <p>positive feedback from users</p>
