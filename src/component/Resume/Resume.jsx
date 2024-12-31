@@ -4,6 +4,7 @@ import MobileViewSection from "./MobileViewSection/MobileViewSection.jsx";
 import "./Resume.css"
 import ImageHoverSection from "./ImageHoverSection/ImageHoverSection.jsx";
 import CardSection from "./InformationSection/InformationSection.jsx";
+import PortfolioNotCompleted from "./PortfolioNotCompleted/PortfolioNotCompleted.jsx";
 
 
 function Resume() {
@@ -17,6 +18,9 @@ function Resume() {
                 </div>
                 <div className="mutk-card-section">
                     <CardSection/>
+                </div>
+                <div className="mutk-portfolio-not-completed">
+                    <PortfolioNotCompleted />
                 </div>
                 <div className="mutk-mobile-section">
                     <MobileViewSection/>

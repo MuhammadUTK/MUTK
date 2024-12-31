@@ -4,7 +4,7 @@ import "./NavbarResume.css"
 
 function NavbarResume() {
     const mainNavbarItems = [
-        {label: "Resume", link: "/"},
+        {label: "Portfolio", link: "/"},
         {label: "Tariqon", link: "/tariqon"},
         {label: "Services", link: "/services"},
         {label: "About", link: "/about"},
