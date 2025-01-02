@@ -261,23 +261,23 @@ function HeroSection() {
                         </div>
                         <div className="resume-stats-content">
                             <div className="resume-stats-block">
-                                <h1>3k+</h1>
-                                <p>Lorem ipsum</p>
+                                <h1>1k+</h1>
+                                <p>Projects Completed</p>
                             </div>
                             <div className="resume-stats-divider"></div>
                             <div className="resume-stats-block">
-                                <h1>7k+</h1>
-                                <p>Lorem ipsum</p>
+                                <h1>1300</h1>
+                                <p>Satisfied Clients</p>
                             </div>
                             <div className="resume-stats-divider"></div>
                             <div className="resume-stats-block">
                                 <h1>10+</h1>
-                                <p>Lorem ipsum</p>
+                                <p>Web Application</p>
                             </div>
                             <div className="resume-stats-divider"></div>
                             <div className="resume-stats-block">
                                 <h1>950</h1>
-                                <p>Lorem ipsum</p>
+                                <p>Websites Launched</p>
                             </div>
                         </div>
                     </div>

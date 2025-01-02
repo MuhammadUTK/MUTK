@@ -38,10 +38,10 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
 }
 
@@ -85,7 +85,7 @@
     font-size: 1.3rem;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 35px;
     margin-left: 10px;
     cursor: pointer;
     color: #faf8f5;
@@ -104,7 +104,7 @@
     width: 80%;
     height: 30%;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%);
 }
@@ -141,6 +141,11 @@
 
 .resume-stats-block h1 {
     padding: 10px 0;
+    font-size: 3rem;
+}
+
+.resume-stats-block  {
+    font-size: 1.2em;
 }
 
 .resume-stats-divider {
