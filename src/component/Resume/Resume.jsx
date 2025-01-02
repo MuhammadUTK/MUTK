@@ -12,22 +12,12 @@ function Resume() {
     return (
         <>
             <div className="mutk-website">
-                <div className="mutk-hero-section">
-                    <NavbarResume/>
-                    <HeroSection/>
-                </div>
-                <div className="mutk-card-section">
-                    <CardSection/>
-                </div>
-                <div className="mutk-portfolio-not-completed">
-                    <PortfolioNotCompleted />
-                </div>
-                <div className="mutk-mobile-section">
-                    <MobileViewSection/>
-                </div>
-                <div className="mutk-image-section">
-                    <ImageHoverSection/>
-                </div>
+                <NavbarResume/>
+                <HeroSection/>
+                <CardSection/>
+                <PortfolioNotCompleted />
+                <MobileViewSection/>
+                <ImageHoverSection/>
             </div>
         </>
     )
