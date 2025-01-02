@@ -17,7 +17,9 @@ function Resume() {
                 <CardSection/>
                 <PortfolioNotCompleted />
                 <MobileViewSection/>
-                <ImageHoverSection/>
+                <div className="mutk-image-section">
+                    <ImageHoverSection/>
+                </div>
             </div>
         </>
     )
