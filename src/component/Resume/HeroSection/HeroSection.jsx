@@ -243,7 +243,7 @@ function HeroSection() {
                     <div className="resume-intro-text">
                         <p>Hello there, Welcome to my Portfolio!</p>
                         <div className="resume-intro-heading">
-                            <p>Crafting Seamless Digital Journeys with <b className="resume-name" >Usman Tariq</b></p>
+                            <p>Crafting Seamless Digital Journeys with <b className="resume-name" >Muhammad Usman Tariq Khan</b></p>
                             <p className="intro-profession-heading">A Front End Web Developer</p>
                         </div>
                     </div>
@@ -284,20 +284,9 @@ function HeroSection() {
                 </div>
                 <div className="resume-hero-graphics">
                     <div className="hero-animation-container">
-                        {projects[0].projectFacts.map((fact, index) => (
-                            <div className={`project-facts detail-block${index + 1}`}
-                                 key={`project-fact-${index}-${animationKey}`}>
-                                <div className="project-fact-title">
-                                    <h4>{fact.label}</h4>
-                                </div>
-                                <div className="fact-percentage">
-                                    <h2>{fact.value}</h2>
-                                </div>
-                            </div>
-                        ))}
                         <div className="grid-item client-description">
                             <div className="client-name-title">
-                                <h3>Satisfied Customer</h3>
+                                <h2>Satisfied Customer</h2>
                             </div>
                             <div className="client-details">
                                 <div className="client-name-list">
@@ -317,7 +306,7 @@ function HeroSection() {
                         </div>
                         <div className="grid-item project-details">
                             <div className="project-title">
-                                <h3>About Project</h3>
+                                <h2>About Project</h2>
                             </div>
                             <div className="project-description-list">
                                 {projects.map((project, index) => (
@@ -337,10 +326,21 @@ function HeroSection() {
                                     </div>
                                 ))}
                             </div>
+                            {projects[0].projectFacts.map((fact, index) => (
+                                <div className={`project-facts detail-block${index + 1}`}
+                                     key={`project-fact-${index}-${animationKey}`}>
+                                    <div className="project-fact-title">
+                                        <h4>{fact.label}</h4>
+                                    </div>
+                                    <div className="fact-percentage">
+                                        <h2>{fact.value}</h2>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                         <div className="grid-item project-statistics">
                             <div className="project-statistics-title">
-                                <h3>Project Stats</h3>
+                                <h2>Project Stats</h2>
                             </div>
                             <div className="project-statistics-content">
                                 <div className="project-bullet-list">
@@ -360,7 +360,7 @@ function HeroSection() {
                                 <div className="project-review-block">
                                     <div className="review-block" key={`project-review-${animationKey}`}>
                                         <div className="review-title">
-                                            <h3>User Reviews</h3>
+                                            <h2>User Reviews</h2>
                                         </div>
                                         <div className="review-percentage">
                                             <h1>{projects[0].userReviewPercentage}%</h1>

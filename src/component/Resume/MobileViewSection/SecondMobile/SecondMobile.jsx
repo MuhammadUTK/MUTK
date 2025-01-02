@@ -78,7 +78,7 @@ const SecondMobile = () => {
     const currentDate = new Date().toLocaleDateString("en-UK", options);
 
     return (
-        <div className="mobile-container">
+        <div className="second-mobile-container">
             <div className="second-mobile-body">
                 <div className="second-mobile-header">
                     <div className="second-mobile-date-container">
