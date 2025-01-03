@@ -136,7 +136,7 @@ function HeroSection() {
                 userReviewPercentage: 92,
                 projectFacts: [
                     { label: "Countries Served", value: "30+" },
-                    { label: "Monthly Active Users", value: "1 Million" },
+                    { label: "Monthly Active Users", value: "900,000" },
                     { label: "Loan Approval Rate", value: "85%" }
                 ]
             },
