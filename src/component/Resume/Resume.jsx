@@ -5,21 +5,44 @@ import "./Resume.css"
 import ImageHoverSection from "./ImageHoverSection/ImageHoverSection.jsx";
 import CardSection from "./InformationSection/InformationSection.jsx";
 import PortfolioNotCompleted from "./PortfolioNotCompleted/PortfolioNotCompleted.jsx";
+import Acknowledgment from "./Acknowledgment/Acknowledgment.jsx";
+import {useState, useEffect} from "react";
 
 
 function Resume() {
+
+    const [AcknowledgmentCheck, setAcknowledgment] = useState(false);
+
+    const acknowledgmentOpen = () => {
+        setAcknowledgment(true);
+    }
+
+    const acknowledgmentClose = () => {
+        setAcknowledgment(false);
+    }
+
+    useEffect(() => {
+        acknowledgmentOpen();
+    }, []);
 
     return (
         <>
             <div className="mutk-website">
                 <NavbarResume/>
                 <HeroSection/>
-                <CardSection/>
-                <PortfolioNotCompleted />
-                <MobileViewSection/>
-                <div className="mutk-image-section">
-                    <ImageHoverSection/>
-                </div>
+                {
+                    !AcknowledgmentCheck && (
+                        <>
+                            <CardSection/>
+                            <PortfolioNotCompleted />
+                        </>
+                    )
+                }
+                {
+                    AcknowledgmentCheck && (
+                        <Acknowledgment closeBtn={acknowledgmentClose}/>
+                    )
+                }
             </div>
         </>
     )
