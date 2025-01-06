@@ -213,6 +213,7 @@
     color: #faf8f5;
     font-family: "Nunito", sans-serif;
     font-size: 1.1rem;
+    overflow: hidden;
 }
 
 .project-description:first-child {
@@ -253,6 +254,7 @@
 }
 
 .client-name-title {
+    position: relative;
     width: 100%;
     height: 30%;
     font-family: "Roboto", sans-serif;
@@ -261,6 +263,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .client-name-title h2 {
@@ -322,7 +325,6 @@
 .client-name {
     width: 70%;
     height: 100%;
-    /*background-color: #d76a6b;*/
     font-family: "Nunito", sans-serif;
     font-size: 2.3rem;
     font-weight: 900;
@@ -739,6 +741,161 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1900px) and (min-width: 1600px) {
+    .resume-hero-container {
+        height: 700px;
+    }
+
+    .resume-mainbody {
+        width: max(1600px, 80%);
+    }
+
+    .resume-intro-text {
+        font-size: 1.1rem;
+    }
+
+    .resume-intro-heading {
+        font-size: 1.9rem;
+    }
+
+    .resume-name {
+        font-size: 1.9rem;
+    }
+
+    .resume-button {
+        width: 128px;
+        height: 48px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+    }
+
+    .resume-stats-block h1 {
+        font-size: 2.2rem;
+    }
+
+    .resume-stats-block  {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+    }
+
+    .client-name {
+        font-size: 2rem;
+    }
+
+    .bullet-facts {
+        font-size: 0.8rem;
+    }
+
+    .review-percentage {
+        font-size: 1.2rem;
+    }
+
+    .review-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1599px) and (min-width: 1301px){
+    .resume-hero-container {
+        height: 630px;
+    }
+
+    .resume-mainbody {
+        width: max(1300px, 90%);
+    }
+
+    .resume-intro-text {
+        font-size: 1rem;
+    }
+
+    .resume-intro-heading {
+        font-size: 1.8rem;
+    }
+
+    .resume-name {
+        font-size: 1.9rem;
+    }
+
+    .resume-button {
+        width: 128px;
+        height: 48px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+    }
+
+    .resume-stats-text {
+        font-size: 0.9rem;
+    }
+
+    .resume-stats-block h1 {
+        font-size: 2rem;
+    }
+
+    .resume-stats-block  {
+        font-size: 0.8rem;
+    }
+
+    .resume-stats-divider {
+        width: 3px;
+        height: 70%;
+        border-radius: 4px;
+        background: linear-gradient(180deg, #006c4c, #4bffe1);
+    }
+
+    .project-title {
+        font-size: 0.8rem;
+    }
+
+    .project-description {
+        font-size: 0.8rem;
+    }
+
+    .client-name-title {
+        font-size: 0.8rem;
+    }
+
+    .client-name {
+        font-size: 1.6rem;
+    }
+
+    .client-rating {
+        font-size: 0.8rem;
+    }
+
+    .bullet-facts {
+        font-size: 0.65rem;
+    }
+
+    .review-title {
+        font-size: 0.8rem;
+    }
+
+    .review-percentage {
+        font-size: 1rem;
+    }
+
+    .review-description {
+        font-size: 0.65rem;
+    }
+
+    .project-facts {
+        width: 80px;
+        height: 48px;
+        border-radius: 10px;
+    }
+
+    .project-fact-title {
+        font-size: 0.5rem;
+    }
+
+    .fact-percentage {
+        font-size: 0.8rem;
+    }
 }
 
 
