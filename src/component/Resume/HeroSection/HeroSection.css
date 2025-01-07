@@ -852,7 +852,7 @@
     }
 
     .project-description {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .client-name-title {
@@ -860,10 +860,14 @@
     }
 
     .client-name {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     .client-rating {
+        font-size: 0.8rem;
+    }
+
+    .project-statistics-title {
         font-size: 0.8rem;
     }
 
@@ -898,6 +902,112 @@
     }
 }
 
+@media (max-width: 1299px) and (min-width: 901px){
+    .resume-hero-container {
+        height: 500px;
+    }
+
+    .resume-mainbody {
+        width: max(880px, 95%);
+    }
+
+    .resume-intro-text {
+        font-size: 0.85rem;
+    }
+
+    .resume-intro-heading {
+        font-size: 1.4rem;
+    }
+
+    .resume-name {
+        font-size: 1.4rem;
+    }
+
+    .resume-button {
+        width: 96px;
+        height: 36px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+    }
+
+    .resume-stats-text {
+        font-size: 0.75rem;
+    }
+
+    .resume-stats-block h1 {
+        font-size: 1.7rem;
+    }
+
+    .resume-stats-block  {
+        font-size: 0.7rem;
+    }
+
+    .resume-stats-divider {
+        width: 3px;
+        height: 70%;
+        border-radius: 4px;
+        background: linear-gradient(180deg, #006c4c, #4bffe1);
+    }
+
+    .project-title {
+        font-size: 0.65rem;
+    }
+
+    .project-description {
+        font-size: 0.65rem;
+    }
+
+    .client-name-title {
+        font-size: 0.65rem;
+    }
+
+    .client-name {
+        font-size: 1.3rem;
+    }
+
+    .client-rating {
+        font-size: 0.65rem;
+    }
+
+    .project-statistics-title {
+        font-size: 0.65rem;
+    }
+
+    .bullet-facts img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .bullet-facts {
+        font-size: 0.55rem;
+    }
+
+    .review-title {
+        font-size: 0.65rem;
+    }
+
+    .review-percentage {
+        font-size: 0.8rem;
+    }
+
+    .review-description {
+        font-size: 0.6rem;
+    }
+
+    .project-facts {
+        width: 70px;
+        height: 42px;
+        border-radius: 10px;
+    }
+
+    .project-fact-title {
+        font-size: 0.5rem;
+    }
+
+    .fact-percentage {
+        font-size: 0.6rem;
+    }
+}
 
 
 
