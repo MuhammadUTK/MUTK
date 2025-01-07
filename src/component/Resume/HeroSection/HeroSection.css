@@ -749,7 +749,7 @@
     }
 
     .resume-mainbody {
-        width: max(1600px, 80%);
+        width: 1600px;
     }
 
     .resume-intro-text {
@@ -806,7 +806,7 @@
     }
 
     .resume-mainbody {
-        width: max(1300px, 90%);
+        width: 1300px;
     }
 
     .resume-intro-text {
@@ -814,11 +814,11 @@
     }
 
     .resume-intro-heading {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .resume-name {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .resume-button {
@@ -902,25 +902,25 @@
     }
 }
 
-@media (max-width: 1300px) and (min-width: 901px){
+@media (max-width: 1300px) and (min-width: 1050px){
     .resume-hero-container {
         height: 500px;
     }
 
     .resume-mainbody {
-        width: max(900px, 95%);
+        width: 1050px;
     }
 
     .resume-intro-text {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
     }
 
     .resume-intro-heading {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .resume-name {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .resume-button {
@@ -931,15 +931,15 @@
     }
 
     .resume-stats-text {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.7rem;
+        font-size: 1.55rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .resume-stats-divider {
@@ -954,7 +954,7 @@
     }
 
     .project-description {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
     }
 
     .client-name-title {
@@ -979,7 +979,7 @@
     }
 
     .bullet-facts {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
     }
 
     .review-title {
@@ -987,11 +987,11 @@
     }
 
     .review-percentage {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .review-description {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .project-facts {
@@ -1009,13 +1009,125 @@
     }
 }
 
+@media (max-width: 1049px) and (min-width: 901px){
+    .resume-hero-container {
+        height: 450px;
+    }
+
+    .resume-mainbody {
+        width: 900px;
+    }
+
+    .resume-intro-text {
+        font-size: 0.6rem;
+    }
+
+    .resume-intro-heading {
+        font-size: 1rem;
+    }
+
+    .resume-name {
+        font-size: 1rem;
+    }
+
+    .resume-button {
+        width: 84px;
+        height: 33px;
+        border-radius: 15px;
+        font-size: 0.7rem;
+    }
+
+    .resume-stats-text {
+        font-size: 0.6rem;
+    }
+
+    .resume-stats-block h1 {
+        font-size: 1.5rem;
+    }
+
+    .resume-stats-block  {
+        font-size: 0.5rem;
+    }
+
+    .resume-stats-divider {
+        width: 3px;
+        height: 65%;
+        border-radius: 4px;
+        background: linear-gradient(180deg, #006c4c, #4bffe1);
+    }
+
+    .project-title {
+        font-size: 0.55rem;
+    }
+
+    .project-description {
+        font-size: 0.55rem;
+    }
+
+    .client-name-title {
+        font-size: 0.55rem;
+    }
+
+    .client-name {
+        font-size: 1rem;
+    }
+
+    .client-rating {
+        font-size: 0.55rem;
+    }
+
+    .client-rating img {
+        width: 72%;
+        height: 18%;
+    }
+
+    .project-statistics-title {
+        font-size: 0.55rem;
+    }
+
+    .bullet-facts img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .bullet-facts {
+        font-size: 0.43rem;
+    }
+
+    .review-title {
+        font-size: 0.55rem;
+    }
+
+    .review-percentage {
+        font-size: 0.55rem;
+    }
+
+    .review-description {
+        font-size: 0.4rem;
+    }
+
+    .project-facts {
+        width: 65px;
+        height: 39px;
+        border-radius: 10px;
+    }
+
+    .project-fact-title {
+        font-size: 0.48rem;
+    }
+
+    .fact-percentage {
+        font-size: 0.6rem;
+    }
+}
+
 @media (max-width: 900px) and (min-width: 750px){
     .resume-hero-container {
         height: 400px;
     }
 
     .resume-mainbody {
-        width: max(750px, 95%);
+        width: 750px;
     }
 
     .resume-intro-text {
