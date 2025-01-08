@@ -188,8 +188,8 @@
 
 @media (max-width: 900px) and (min-width: 751px) {
     .acknowledgment-box {
-        width: 550px;
-        height: 250px;
+        width: 500px;
+        height: 220px;
         border-radius: 25px;
         padding: 12px;
     }
@@ -200,7 +200,7 @@
 
     .acknowledgment-content {
         height: 55%;
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .acknowledgment-button {

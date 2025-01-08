@@ -1,12 +1,13 @@
 .resume-hero-container {
     height: 865px;
-    width: 100vw;
+    width: 100%;
     background-color: #1f272f;
+    box-sizing: border-box;
 }
 
 .resume-mainbody {
     display: flex;
-    width: 1920px;
+    width: 1900px;
     height: 100%;
     margin: 0 auto;
 }
@@ -49,12 +50,12 @@
     width: 80%;
     padding: 10px 0;
     font-weight: 800;
-    font-size: 2.3rem;
+    font-size: 2.27rem;
 }
 
 .resume-name {
     font-weight: 800;
-    font-size: 2.3rem;
+    font-size: 2.27rem;
     background: #00bd96;
     background-clip: text;
     color: transparent;

@@ -1,11 +1,11 @@
 .service-display-section-container {
-    width: 100vw;
+    width: 100%;
     height: 955px;
     background-color: #161c21;
 }
 .service-display-section {
     margin: 0 auto;
-    width: 1920px;
+    width: 1900px;
     height: 955px;
     background-color: #161c21;
     position: relative;
