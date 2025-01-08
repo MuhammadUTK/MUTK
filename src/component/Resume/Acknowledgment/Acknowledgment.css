@@ -38,7 +38,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 45%;
+    height: 55%;
     font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
 }
@@ -47,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35%;
+    height: 25%;
 }
 
 /* From Uiverse.io by vinodjangid07 */
@@ -144,5 +144,222 @@
         width: 120px;
         height: 44px;
         font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 1300px) and (min-width: 901px) {
+    .acknowledgment-box {
+        width: 530px;
+        height: 220px;
+        border-radius: 25px;
+        padding: 12px;
+    }
+
+    .acknowledgment-title {
+        font-size: 0.9rem;
+    }
+
+    .acknowledgment-content {
+        height: 55%;
+        font-size: 1rem;
+    }
+
+    .acknowledgment-button {
+        height: 25%;
+    }
+
+    .Btn {
+        width: 150px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .Btn::before {
+        height: 1px;
+        top: 7px;
+    }
+
+    .Btn::after {
+        height: 1px;
+        bottom: 7px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 751px) {
+    .acknowledgment-box {
+        width: 550px;
+        height: 250px;
+        border-radius: 25px;
+        padding: 12px;
+    }
+
+    .acknowledgment-title {
+        font-size: 0.9rem;
+    }
+
+    .acknowledgment-content {
+        height: 55%;
+        font-size: 1rem;
+    }
+
+    .acknowledgment-button {
+        height: 25%;
+    }
+
+    .Btn {
+        width: 150px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .Btn::before {
+        height: 1px;
+        top: 7px;
+    }
+
+    .Btn::after {
+        height: 1px;
+        bottom: 7px;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 600px) {
+    .acknowledgment-box {
+        width: 550px;
+        height: 220px;
+        border-radius: 25px;
+        padding: 12px;
+    }
+
+    .acknowledgment-title {
+        font-size: 0.9rem;
+    }
+
+    .acknowledgment-content {
+        height: 55%;
+        font-size: 1rem;
+    }
+
+    .acknowledgment-button {
+        height: 25%;
+    }
+
+    .Btn {
+        width: 150px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .Btn::before {
+        height: 1px;
+        top: 7px;
+    }
+
+    .Btn::after {
+        height: 1px;
+        bottom: 7px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 501px) {
+    .acknowledgment-box {
+        width: 450px;
+        height: 200px;
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    .acknowledgment-title {
+        font-size: 0.85rem;
+    }
+
+    .acknowledgment-content {
+        height: 55%;
+        font-size: 0.82rem;
+    }
+
+    .acknowledgment-button {
+        height: 25%;
+    }
+
+    .Btn {
+        width: 120px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .Btn::before {
+        height: 1px;
+        top: 6px;
+    }
+
+    .Btn::after {
+        height: 1px;
+        bottom: 6px;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 401px) {
+    .acknowledgment-box {
+        width: 350px;
+        height: 150px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .acknowledgment-title {
+        font-size: 0.65rem;
+    }
+
+    .acknowledgment-content {
+        height: 55%;
+        font-size: 0.65rem;
+    }
+
+    .acknowledgment-button {
+        height: 25%;
+    }
+
+    .Btn {
+        width: 90px;
+        height: 25px;
+        font-size: 0.6rem;
+    }
+
+    .Btn::before {
+        top: 4px;
+    }
+
+    .Btn::after {
+        bottom: 4px;
+    }
+}
+
+@media (max-width: 400px) and (min-width: 300px) {
+    .acknowledgment-box {
+        width: 180px;
+        height: 100px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .acknowledgment-title {
+        font-size: 0.45rem;
+    }
+
+    .acknowledgment-content {
+        height: 55%;
+        font-size: 0.4rem;
+    }
+
+    .acknowledgment-button {
+        height: 25%;
+    }
+
+    .Btn {
+        width: 60px;
+        height: 15px;
+        font-size: 0.4rem;
     }
 }
