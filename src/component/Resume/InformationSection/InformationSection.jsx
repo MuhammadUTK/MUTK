@@ -121,9 +121,7 @@ function InformationSection() {
                                 I create tailored web solutions that combine creativity, technical expertise, and a
                                 commitment to excellence. By understanding your goals, I build websites that are
                                 visually appealing, fast, and easy to use across all devices. With clean code,
-                                responsive design, and seamless functionality.
-                            </p>
-                            <p>
+                                responsive design, and seamless functionality.<br/><br/>
                                 I ensure your site delivers results that are reliable, professional, and aligned with
                                 your needs. When you work with me, you get a collaborative partner dedicated to bringing
                                 your vision to life and exceeding expectations.
