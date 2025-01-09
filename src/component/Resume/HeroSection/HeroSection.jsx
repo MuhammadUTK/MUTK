@@ -116,7 +116,7 @@ function HeroSection() {
                 ],
                 userReviewPercentage: 96,
                 projectFacts: [
-                    { label: "Countries Shipped To", value: "Global" },
+                    { label: "Countries Shipped To", value: "70+" },
                     { label: "Monthly Active Users", value: "220,000" },
                     { label: "NFT Collection Size", value: "30,000+" }
                 ]
