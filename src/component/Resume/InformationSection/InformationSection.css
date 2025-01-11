@@ -3744,3 +3744,327 @@
         }
     }
 }
+
+@media (max-width: 349px) and (min-width: 300px) {
+    .service-display-section-container {
+        height: 600px;
+    }
+
+    .service-display-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-display-heading {
+        font-size: 0.45rem;
+        width: 100%;
+        height: 7%;
+    }
+
+    .service-slideshow {
+        height: 43%;
+        width: 95%;
+        flex-wrap: wrap;
+    }
+
+    .service-slide {
+        max-width: calc((100% - 1.2rem)/3);
+        margin: 0 0.2rem;
+        height: calc(50% - 1.5rem);
+        box-shadow: 0 -0.1rem 0.5rem 0 rgba(0, 189, 150, 0.4)
+    }
+
+    .service-slide:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 189, 150, 0.6);
+    }
+
+    .slide-top-image img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .slide-content {
+        padding: 0 5px;
+    }
+
+    .slide-content h2 {
+        font-size: 0.45rem;
+    }
+
+    .slide-content p {
+        font-size: 0.33rem;
+    }
+
+    .convincing-details {
+        flex-direction: column-reverse;
+    }
+
+    .convincing-text {
+        width: 100%;
+        height: 50%;
+    }
+
+    .convincing-infographics {
+        width: 100%;
+        height: 50%;
+    }
+
+    .convincing-infographics-gradient {
+        height: 22%;
+        width: 100%;
+        filter: blur(30px);
+    }
+
+    .convincing-text-heading {
+        font-size: 0.4rem;
+        justify-content: center;
+    }
+
+    .convincing-text-content {
+        text-align: center;
+        font-size: 0.4rem;
+        height: 70%;
+        padding: 0 2rem;
+    }
+
+    .layout-orbit {
+        width: 230px;
+        height: 230px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -16%) rotateX(65deg) skew(25deg, -35deg);
+    }
+
+    .layout-sample {
+        width: 60px;
+        border-radius: 5px;
+        height: calc((60px/4)*3);
+    }
+
+    .sample-one {
+        position: absolute;
+        top: 40%;
+        left: 64%;
+        z-index: 4;
+        animation: one-to-ten 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes one-to-ten {
+        0% {
+            top: 40%;
+            left: 64%;
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+            top: 17%;
+            left: 100%;
+        }
+        51%{
+            z-index: 1;
+            opacity: 0;
+            top: -8%;
+            left: 65%;
+        }
+        100% {
+            z-index: 1;
+            opacity: 1;
+            top: 6%;
+            left: 41%;
+        }
+    }
+
+    .sample-two {
+        position: absolute;
+        top: 53%;
+        left: 43%;
+        z-index: 4;
+        animation: two-to-one 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes two-to-one {
+        0% {
+            top: 53%;
+            left: 43%;
+        }
+        100% {
+            top: 40%;
+            left: 64%;
+        }
+    }
+
+    .sample-three {
+        position: absolute;
+        top: 45%;
+        left: 24%;
+        z-index: 3;
+        animation: three-to-two 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes three-to-two {
+        0% {
+            top: 45%;
+            left: 24%;
+        }
+        90% {
+            z-index: 4;
+        }
+        100% {
+            z-index: 4;
+            top: 53%;
+            left: 43%;
+        }
+    }
+
+    .sample-four {
+        position: absolute;
+        top: 33%;
+        left: 45%;
+        z-index: 3;
+        animation: four-to-three 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes four-to-three {
+        0% {
+            top: 33%;
+            left: 45%;
+        }
+        100% {
+            top: 45%;
+            left: 24%;
+        }
+    }
+
+    .sample-five {
+        position: absolute;
+        top: 20%;
+        left: 66%;
+        z-index: 3;
+        animation: five-to-four 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes five-to-four {
+        0% {
+            top: 20%;
+            left: 66%;
+        }
+        100% {
+            top: 33%;
+            left: 45%;
+        }
+    }
+
+    .sample-six {
+        position: absolute;
+        top: 11%;
+        left: 57%;
+        z-index: 2;
+        animation: six-to-five 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes six-to-five {
+        0% {
+            top: 11%;
+            left: 57%;
+        }
+        90% {
+            z-index: 3;
+        }
+        100% {
+            z-index: 3;
+            top: 20%;
+            left: 66%;
+        }
+    }
+
+    .sample-seven {
+        position: absolute;
+        top: 23%;
+        left: 36%;
+        z-index: 2;
+        animation: seven-to-six 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes seven-to-six {
+        0% {
+            top: 23%;
+            left: 36%;
+        }
+        100% {
+            top: 11%;
+            left: 57%;
+        }
+    }
+
+    .sample-eight {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        z-index: 2;
+        animation: eight-to-seven 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes eight-to-seven {
+        0% {
+            top: 35%;
+            left: 15%;
+        }
+        100% {
+            top: 23%;
+            left: 36%;
+        }
+    }
+
+    .sample-nine {
+        position: absolute;
+        top: 18%;
+        left: 20%;
+        z-index: 1;
+        animation: nine-to-eight 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes nine-to-eight {
+        0% {
+            top: 18%;
+            left: 20%;
+        }
+        90% {
+            z-index: 2;
+        }
+        100% {
+            z-index: 2;
+            top: 35%;
+            left: 15%;
+        }
+    }
+
+    .sample-ten {
+        position: absolute;
+        top: 6%;
+        left: 41%;
+        z-index: 1;
+        animation: ten-to-nine 2s ease-in-out;
+        animation-delay: 1s;
+    }
+
+    @keyframes ten-to-nine {
+        0% {
+            top: 6%;
+            left: 41%;
+        }
+        100% {
+            top: 18%;
+            left: 20%;
+        }
+    }
+}
