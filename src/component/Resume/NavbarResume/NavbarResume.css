@@ -36,3 +36,43 @@
     border-bottom:  2px solid #a90027;
     color: #a90027;
 }
+
+@media (max-width: 1600px) and (min-width: 1300px) {
+    .resume-nav-items {
+        padding: 9px;
+    }
+
+    .resume-nav-list-item a {
+        padding: 10px;
+        margin: 0 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 1100px) {
+    .resume-nav-items {
+        padding: 9px;
+    }
+
+    .resume-nav-list-item a {
+        padding: 9px;
+        margin: 0 14px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1099px) and (min-width: 900px) {
+
+    .resume-navbar {
+        height: 80px;
+    }
+    .resume-nav-items {
+        padding: 8px;
+    }
+
+    .resume-nav-list-item a {
+        padding: 8px;
+        margin: 0 12px;
+        font-size: 0.8rem;
+    }
+}
