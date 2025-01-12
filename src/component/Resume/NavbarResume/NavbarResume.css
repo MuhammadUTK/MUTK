@@ -76,3 +76,35 @@
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 899px) and (min-width: 750px) {
+
+    .resume-navbar {
+        height: 70px;
+    }
+    .resume-nav-items {
+        padding: 8px;
+    }
+
+    .resume-nav-list-item a {
+        padding: 8px;
+        margin: 0 10px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 749px) and (min-width: 600px) {
+
+    .resume-navbar {
+        height: 70px;
+    }
+    .resume-nav-items {
+        padding: 6px;
+    }
+
+    .resume-nav-list-item a {
+        padding: 8px;
+        margin: 0 8px;
+        font-size: 0.7rem;
+    }
+}
