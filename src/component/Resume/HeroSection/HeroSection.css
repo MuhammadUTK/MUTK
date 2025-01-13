@@ -87,19 +87,43 @@
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     border-radius: 35px;
-    margin-left: 10px;
     cursor: pointer;
     color: #faf8f5;
-    background-color: #018f73;
+    position: relative;
+    border: none;
+    background-color: rgb(0, 189, 150);
+    box-shadow: 0px 10px 10px rgb(4, 239, 189) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px #00604e inset;
+    margin-left: 30px;
 }
 
-.resume-button.hire {
-    background: linear-gradient(90deg, #006c4c, #00ac91);
+.resume-button::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
 }
 
-.resume-button.explore {
-    background: linear-gradient(270deg, #006c4c, #00ac91);
+.resume-button::after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
 }
+
+.resume-button:hover {
+    animation: jello-horizontal 1s;
+}
+
 
 .resume-stats {
     width: 80%;
@@ -1392,7 +1416,7 @@
 
     .resume-intro-buttontype {
         height: 20%;
-        justify-content: center;
+        justify-content: center
     }
 
     .resume-button {
@@ -1400,6 +1424,7 @@
         height: 36px;
         border-radius: 15px;
         font-size: 0.75rem;
+        margin: 0 10px;
     }
 
     .resume-stats {
@@ -1561,6 +1586,7 @@
         height: 33px;
         border-radius: 12px;
         font-size: 0.65rem;
+        margin: 0 10px;
     }
 
     .resume-stats {
@@ -1727,6 +1753,7 @@
         height: 27px;
         border-radius: 12px;
         font-size: 0.55rem;
+        margin: 0 10px;
     }
 
     .resume-stats {

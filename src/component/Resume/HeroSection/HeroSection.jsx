@@ -248,10 +248,10 @@ function HeroSection() {
                         </div>
                     </div>
                     <div className="resume-intro-buttontype">
-                        <div className="resume-button hire">
+                        <div className="resume-button">
                             Hire Me
                         </div>
-                        <div className="resume-button explore">
+                        <div className="resume-button">
                             Explore Site
                         </div>
                     </div>
