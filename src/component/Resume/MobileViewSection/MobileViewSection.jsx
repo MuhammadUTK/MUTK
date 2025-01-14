@@ -7,6 +7,7 @@ import Share from "../Images/Mobile-Reasons/share.png"
 import Gallery from "../Images/Mobile-Reasons/Gallery.png"
 import Keyboard from "../Images/Mobile-Reasons/keyboard.png"
 import SocialMedia from "../Images/Mobile-Reasons/Social-media.png"
+import React from "react";
 
 function MobileViewSection() {
     return (
@@ -109,6 +110,7 @@ function MobileViewSection() {
                             <h1>Mobile-First Web Solutions</h1>
                         </div>
                         <div className="mobile-content-text">
+                            <div className="mobile-text-gradient"></div>
                             <p>
                                 I craft visually stunning, highly functional websites optimized for mobile devices. With
                                 captivating animations, pixel-perfect responsiveness, and sleek layouts, my designs

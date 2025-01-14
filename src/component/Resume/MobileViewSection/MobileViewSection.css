@@ -52,7 +52,7 @@
 
 .mobile-reason:hover {
     transform: scale(1.05);
-    box-shadow: -10px -10px 20px #37464e, 10px 10px 20px #081215;
+    box-shadow:  inset -5px -5px 10px #37464e, inset 5px 5px 10px #081215;
 }
 
 .reason-image {
@@ -129,6 +129,7 @@
 }
 
 .mobile-content-text {
+    position: relative;
     color: #faf8f5;
     height: 60%;
     font-size: 1.1rem;
@@ -138,4 +139,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mobile-text-gradient {
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    filter: blur(80px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00bd96;
+    opacity: 0.25;
 }

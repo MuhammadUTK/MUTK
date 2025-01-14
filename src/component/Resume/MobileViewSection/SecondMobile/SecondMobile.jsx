@@ -155,9 +155,9 @@ const SecondMobile = () => {
                     </div>
                 </div>
             </div>
-            <div className="mobile-frame__button--power">
+            <div className="second-mobile-frame__button--power">
             </div>
-            <div className="mobile-frame__button--sound">
+            <div className="second-mobile-frame__button--sound">
             </div>
         </div>
     );
