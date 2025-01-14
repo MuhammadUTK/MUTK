@@ -34,6 +34,7 @@ function Resume() {
                     !AcknowledgmentCheck && (
                         <>
                             <CardSection/>
+                            <MobileViewSection />
                             <PortfolioNotCompleted />
                         </>
                     )
