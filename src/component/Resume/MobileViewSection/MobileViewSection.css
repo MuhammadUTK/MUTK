@@ -64,8 +64,8 @@
 }
 
 .reason-image img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .reason-content {
@@ -151,4 +151,54 @@
     transform: translate(-50%, -50%);
     background-color: #00bd96;
     opacity: 0.25;
+}
+
+@media (max-width: 1900px) and (min-width: 1600px) {
+    .mobile-section {
+        height: 920px;
+    }
+
+    .mobile-content-container {
+        margin: 0 auto;
+        height: 100%;
+        width: 1570px;
+    }
+
+    .mobile-section-heading {
+        font-size: 1.5rem;
+    }
+
+    .mobile-reasons-container {
+        padding-top: 1.7rem;
+    }
+
+    .mobile-reason {
+        width: 480px;
+        border-radius: 17px;
+    }
+
+    .reason-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .reason-content {
+        padding: 0 0.9rem;
+    }
+
+    .reason-heading {
+        font-size: 0.9rem;
+    }
+
+    .reason-description {
+        font-size: 0.95rem;
+    }
+
+    .mobile-content-heading {
+        font-size: 1.3rem;
+    }
+
+    .mobile-content-text {
+        font-size: 1rem;
+    }
 }
