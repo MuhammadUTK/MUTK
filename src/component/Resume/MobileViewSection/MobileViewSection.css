@@ -21,16 +21,85 @@
     color: #00bd96;
 }
 
-.mobile-section-tobe {
+.mobile-reasons-section {
     width: 100%;
     height: 40%;
-    background-color: #ff719c;
 }
 
-.first-mobile-content {
+.mobile-reasons-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.mobile-reason {
+    width: 520px;
+    height: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #1f272f;
+    box-shadow: -5px -5px 10px #37464e, 5px 5px 10px #081215;
+    cursor: default;
+    transition: 0.3s ease-in-out;
+}
+
+.mobile-reason:hover {
+    transform: scale(1.05);
+    box-shadow: -10px -10px 20px #37464e, 10px 10px 20px #081215;
+}
+
+.reason-image {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reason-image img {
+    width: 60px;
+    height: 60px;
+}
+
+.reason-content {
+    width: 75%;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.reason-heading {
+    width: 100%;
+    height: 30%;
+    font-family: "Roboto", sans-serif;
+    color: #00bd96;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    font-size: 1rem;
+}
+
+.reason-description {
+    width: 100%;
+    height: 70%;
+    font-family: "Nunito", sans-serif;
+    color: #faf8f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.mobile-section-content {
     margin: 0 auto;
     width: 90%;
-    height: 55%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,18 +121,20 @@
 
 .mobile-content-heading {
     color: #00bd96;
-    height: 20%;
+    height: 25%;
     display: flex;
     align-items: end;
+    justify-content: center;
     font-size: 1.5rem;
 }
 
 .mobile-content-text {
     color: #faf8f5;
-    height: 70%;
-    font-size: 1.2rem;
+    height: 60%;
+    font-size: 1.1rem;
     font-family: "Nunito", sans-serif;
     padding-right: 3rem;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
