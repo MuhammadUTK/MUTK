@@ -340,4 +340,16 @@
 
         }
     }
+
+    .first-mobile-frame__button--power {
+        width: 18px;
+        height: 25px;
+    }
+
+    .first-mobile-frame__button--sound {
+        width: 20px;
+        height: 35px;
+        border-radius: 7px;
+        box-shadow: 0 37px 0 #aeaeae;
+    }
 }
