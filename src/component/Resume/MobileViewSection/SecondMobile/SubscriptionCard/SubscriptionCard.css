@@ -151,3 +151,47 @@
 
 
 }
+
+@media (max-width: 1299px) and (min-width: 1100px) {
+    .subscription-card-container {
+        border-radius: 12px;
+    }
+
+    .brand-logo {
+        width: 25px;
+        height: 25px;
+        border-radius: 8px;
+    }
+
+    .brand-logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .brand-name {
+        font-size: 9px;
+    }
+
+    .subscription-date {
+        font-size: 7px;
+    }
+
+    .subscription-cost {
+        font-size: 8px;
+    }
+
+    .more-option-container {
+        width: 20px;
+        height: 20px;
+    }
+
+    .more-option-circles {
+        width: 4px;
+        height: 4px;
+        box-shadow: 5px 0 0 rgba(215,106,107, 1),
+        -5px 0 0 rgba(215,106,107, 1);
+    }
+
+
+
+}

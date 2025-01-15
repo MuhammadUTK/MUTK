@@ -171,3 +171,64 @@
         font-size: 8px;
     }
 }
+
+@media (max-width: 1299px) and (min-width: 1100px) {
+    .task-container {
+        height: 60px;
+    }
+
+    .task-information {
+        width: 70%;
+    }
+
+    .task-heading {
+        font-size: 8px;
+        padding-left: 3px;
+    }
+
+    .task-title-divider {
+        transform: rotate(20deg) translate(-50%);
+    }
+
+    .task-price {
+        font-size: 9px;
+    }
+
+    .task-duration {
+        font-size: 9px;
+    }
+
+    .task-duration-divider {
+        transform: rotate(20deg) translate(-50%);
+    }
+
+    .total-percentage {
+        height: 4px;
+    }
+
+    .progress-percentage {
+        height: 4px;
+    }
+
+    .task-weeks {
+        font-size: 8px;
+    }
+
+    .task-members {
+        width: 30%;
+        font-size: 8px;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .member img {
+        width: 35%;
+    }
+
+    .member {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

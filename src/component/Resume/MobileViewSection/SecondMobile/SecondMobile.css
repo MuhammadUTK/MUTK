@@ -1,3 +1,8 @@
+:root {
+    --upper-design-width: 150px;
+    --upper-design-height: 150px;
+}
+
 .second-mobile-container {
     width: 260px;
     height: 430px;
@@ -415,5 +420,95 @@
 
     .subscription-list-container {
         border-radius: 40px;
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 1100px) {
+    :root {
+        --upper-design-width: 100px;
+        --upper-design-height: 100px;
+    }
+
+    .second-mobile-container {
+        width: 182px;
+        height: 301px;
+    }
+
+    .second-mobile-body {
+        border-radius: 40px;
+    }
+
+    .second-mobile-date {
+        font-size: 9px;
+    }
+
+    .account-holder-info {
+        font-size: 0.75rem;
+    }
+
+    .second-account-title {
+        font-size: 1.5rem;
+    }
+
+    .debit-card {
+        border-radius: 15px;
+    }
+
+    .upper-design {
+        width: var(--upper-design-width);
+        height: var(--upper-design-height);
+    }
+
+    .extreme-circle {
+        width: calc(var(--upper-design-width) * (5/6));
+        height: calc(var(--upper-design-height) * (5/6));
+    }
+
+    .middle-circle {
+        width: calc(var(--upper-design-width) * (2/3));
+        height: calc(var(--upper-design-height) * (2/3));
+    }
+
+    .inner-circle {
+        width: calc(var(--upper-design-width) * (1/2));
+        height: calc(var(--upper-design-height) * (1/2));
+    }
+
+    .card-type {
+        font-size: 9px;
+    }
+
+    .card-type p {
+        padding-left: 5px;
+    }
+
+    .card-logo-circle1 {
+        width: 16px;
+        height: 16px;
+    }
+
+    .card-logo-circle2 {
+        width: 14px;
+        height: 14px;
+    }
+
+    .account-balance {
+        font-size: 0.7rem;
+    }
+
+    .card-holder-name {
+        font-size: 0.7rem;
+    }
+
+    .card-expire-date {
+        font-size: 0.7rem;
+    }
+
+    .subscription-title {
+        font-size: 8px;
+    }
+
+    .subscription-list-container {
+        border-radius: 35px;
     }
 }

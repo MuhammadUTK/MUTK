@@ -65,7 +65,7 @@
     color: #8e573a;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     font-size: 0.8rem;
     font-weight: bold;
@@ -256,6 +256,84 @@
         }
         50% {
             transform: translateY(calc(-100% + (((323px * 0.75) * 0.8) - 20px)));
+        }
+        100% {
+            transform: translateY(0);
+
+        }
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 1100px) {
+    .first-mobile-container {
+        width: 182px;
+        height: 301px;
+    }
+
+    .first-mobile-body {
+        border-radius: 40px;
+    }
+
+    .first-mobile-header {
+        height: 14%;
+    }
+
+    .account-info {
+        height: 55%;
+    }
+
+    .responsive-menu {
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .responsive-menu-bars {
+        height: 2px;
+        width: 40%;
+    }
+
+    .account-image {
+        padding: 0 30px;
+        justify-content: center;
+    }
+
+    .account-image img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .mobile-date {
+        height: 45%;
+        font-size: 0.7rem;
+    }
+
+    .first-mobile-title {
+        justify-content: space-evenly;
+    }
+
+    .mobile-menu__button {
+        font-size: 0.85rem;
+    }
+
+    .first-mobile-heading-divider {
+        transform: rotate(-25deg) translate(50%)
+    }
+
+    .mobile-tasks-container {
+        border-radius: 32px;
+    }
+
+    .scroll-content {
+        animation: scrollUpAndDown 30s linear infinite; /* Apply animation */
+        will-change: transform; /* Hint the browser about upcoming changes for performance */
+    }
+
+    @keyframes scrollUpAndDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(calc(-100% + (((301px * 0.75) * 0.8) - 20px)));
         }
         100% {
             transform: translateY(0);
