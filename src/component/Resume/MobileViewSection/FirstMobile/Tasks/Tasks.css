@@ -132,3 +132,42 @@
     justify-content: end;
     flex-wrap: wrap;
 }
+
+@media (max-width: 1599px) and (min-width: 1300px) {
+    .task-container {
+        height: 65px;
+    }
+
+    .task-heading {
+        font-size: 8px;
+        padding-left: 5px;
+    }
+
+    .task-title-divider {
+        transform: rotate(25deg) translate(-50%);
+    }
+
+    .task-price {
+        font-size: 10px;
+    }
+
+    .task-duration {
+        font-size: 10px;
+    }
+
+    .task-duration-divider {
+        transform: rotate(25deg) translate(-50%);
+    }
+
+    .total-percentage {
+        height: 4px;
+    }
+
+    .progress-percentage {
+        height: 4px;
+    }
+
+    .task-weeks {
+        font-size: 8px;
+    }
+}
