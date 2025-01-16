@@ -524,3 +524,110 @@
         box-shadow: 0 37px 0 #aeaeae;
     }
 }
+
+@media (max-width: 1099px) and (min-width: 900px) {
+    :root {
+        --upper-design-width: 85px;
+        --upper-design-height: 85px;
+    }
+
+    .second-mobile-container {
+        width: 156px;
+        height: 258px;
+    }
+
+    .second-mobile-body {
+        border-radius: 35px;
+    }
+
+    .second-mobile-date {
+        font-size: 8px;
+    }
+
+    .account-holder-info {
+        font-size: 0.65rem;
+    }
+
+    .account-holder-profile img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .second-account-title {
+        font-size: 1.2rem;
+    }
+
+    .debit-card {
+        border-radius: 10px;
+    }
+
+    .upper-design {
+        width: var(--upper-design-width);
+        height: var(--upper-design-height);
+    }
+
+    .extreme-circle {
+        width: calc(var(--upper-design-width) * (5/6));
+        height: calc(var(--upper-design-height) * (5/6));
+    }
+
+    .middle-circle {
+        width: calc(var(--upper-design-width) * (2/3));
+        height: calc(var(--upper-design-height) * (2/3));
+    }
+
+    .inner-circle {
+        width: calc(var(--upper-design-width) * (1/2));
+        height: calc(var(--upper-design-height) * (1/2));
+    }
+
+    .card-type {
+        font-size: 8px;
+    }
+
+    .card-type p {
+        padding-left: 3px;
+    }
+
+    .card-logo-circle1 {
+        width: 13px;
+        height: 13px;
+    }
+
+    .card-logo-circle2 {
+        width: 11px;
+        height: 11px;
+    }
+
+    .account-balance {
+        font-size: 0.6rem;
+    }
+
+    .card-holder-name {
+        font-size: 0.6rem;
+    }
+
+    .card-expire-date {
+        font-size: 0.6rem;
+    }
+
+    .subscription-title {
+        font-size: 7px;
+    }
+
+    .subscription-list-container {
+        border-radius: 30px;
+    }
+
+    .second-mobile-frame__button--power {
+        width: 18px;
+        height: 22px;
+    }
+
+    .second-mobile-frame__button--sound {
+        width: 20px;
+        height: 30px;
+        border-radius: 6px;
+        box-shadow: 0 30px 0 #aeaeae;
+    }
+}

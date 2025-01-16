@@ -314,3 +314,59 @@
         font-size: 0.7rem;
     }
 }
+
+@media (max-width: 1099px) and (min-width: 900px) {
+    .mobile-section {
+        height: 550px;
+    }
+
+    .mobile-content-container {
+        margin: 0 auto;
+        height: 100%;
+        width: 870px;
+    }
+
+    .mobile-section-heading {
+        font-size: 0.95rem;
+    }
+
+    .mobile-reasons-container {
+        padding-top: 0.9rem;
+    }
+
+    .mobile-reason {
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    .reason-image {
+        width: 20%;
+    }
+
+    .reason-image img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .reason-content {
+        padding: 0 0.5rem 0 3px;
+    }
+
+    .reason-heading {
+        font-size: 8px;
+    }
+
+    .reason-description {
+        font-size: 0.5rem;
+    }
+
+    .mobile-content-heading {
+        height: 25%;
+        font-size: 0.8rem;
+    }
+
+    .mobile-content-text {
+        height: 70%;
+        font-size: 0.6rem;
+    }
+}
