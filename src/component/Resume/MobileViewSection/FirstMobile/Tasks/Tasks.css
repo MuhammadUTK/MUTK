@@ -11,7 +11,6 @@
 .task-information {
     width: 60%;
     height: 100%;
-    /*background-color: #007bff;*/
     position: relative;
 }
 
@@ -284,6 +283,75 @@
 
     .member img {
         width: 35%;
+    }
+
+    .member {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 750px) {
+    .task-container {
+        border-radius: 7px;
+        height: 45px;
+    }
+
+    .task-information {
+        width: 65%;
+    }
+
+    .task-heading {
+        font-size: 5px;
+        padding-left: 3px;
+    }
+
+    .task-title-divider {
+        transform: rotate(20deg) translate(-50%);
+    }
+
+    .task-price {
+        font-size: 6px;
+    }
+
+    .task-duration {
+        font-size: 6px;
+    }
+
+    .task-duration-divider {
+        transform: rotate(20deg) translate(-50%);
+    }
+
+    .task-progress {
+        padding: 0 2px;
+    }
+
+    .total-percentage {
+        width: 50%;
+        height: 3px;
+    }
+
+    .progress-percentage {
+        width: 50%;
+        height: 3px;
+    }
+
+    .task-weeks {
+        width: 50%;
+        font-size: 7px;
+    }
+
+    .task-members {
+        width: 35%;
+        font-size: 7px;
+        padding: 2px;
+        text-align: center;
+    }
+
+    .member img {
+        width: 30%;
     }
 
     .member {

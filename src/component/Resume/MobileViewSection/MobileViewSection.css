@@ -370,3 +370,60 @@
         font-size: 0.6rem;
     }
 }
+
+@media (max-width: 899px) and (min-width: 750px) {
+    .mobile-section {
+        height: 450px;
+    }
+
+    .mobile-content-container {
+        margin: 0 auto;
+        height: 100%;
+        width: 720px;
+    }
+
+    .mobile-section-heading {
+        font-size: 0.8rem;
+    }
+
+    .mobile-reasons-container {
+        padding-top: 0.9rem;
+    }
+
+    .mobile-reason {
+        width: 215px;
+        border-radius: 8px;
+        box-shadow: -4px -4px 8px #37464e, 4px 4px 8px #081215;
+    }
+
+    .reason-image {
+        width: 20%;
+    }
+
+    .reason-image img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .reason-content {
+        padding: 0 6px 0 2px;
+    }
+
+    .reason-heading {
+        font-size: 7px;
+    }
+
+    .reason-description {
+        font-size: 7px;
+    }
+
+    .mobile-content-heading {
+        height: 25%;
+        font-size: 10px;
+    }
+
+    .mobile-content-text {
+        height: 70%;
+        font-size: 8px;
+    }
+}
