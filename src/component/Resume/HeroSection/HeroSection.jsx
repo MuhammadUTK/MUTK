@@ -244,7 +244,7 @@ function HeroSection() {
                         <p>Hello there, Welcome to my Portfolio!</p>
                         <div className="resume-intro-heading">
                             <p>Crafting Seamless Digital Journeys with <b className="resume-name" >Muhammad Usman Tariq Khan</b></p>
-                            <p className="intro-profession-heading">A Front End Web Developer</p>
+                            <p className="intro-profession-heading">A MERN Stack Developer</p>
                         </div>
                     </div>
                     <div className="resume-intro-buttontype">
