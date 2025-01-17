@@ -744,3 +744,128 @@
         left: -3px;
     }
 }
+
+@media (max-width: 749px) and (min-width: 601px) {
+    :root {
+        --upper-design-width: 55px;
+        --upper-design-height: 55px;
+    }
+
+    .second-mobile-container {
+        width: 104px;
+        height: 162px;
+    }
+
+    .second-mobile-body {
+        border-radius: 25px;
+        border: 1px solid #aeaeae; /* Inner border */
+        outline: 1px solid #717171;
+    }
+
+    .second-mobile-date {
+        font-size: 5px;
+    }
+
+    .account-holder-info {
+        font-size: 6px;
+    }
+
+    .account-holder-profile img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .second-account-title {
+        font-size: 0.8rem;
+    }
+
+    .debit-card {
+        border-radius: 6px;
+    }
+
+    .upper-design {
+        width: var(--upper-design-width);
+        height: var(--upper-design-height);
+    }
+
+    .extreme-circle {
+        width: calc(var(--upper-design-width) * (5/6));
+        height: calc(var(--upper-design-height) * (5/6));
+    }
+
+    .middle-circle {
+        width: calc(var(--upper-design-width) * (2/3));
+        height: calc(var(--upper-design-height) * (2/3));
+    }
+
+    .inner-circle {
+        width: calc(var(--upper-design-width) * (1/2));
+        height: calc(var(--upper-design-height) * (1/2));
+    }
+
+    .card-type {
+        padding-left: 3px;
+        font-size: 5px;
+    }
+
+    .card-type p {
+        padding-left: 3px;
+    }
+
+    .card-logo-circle1 {
+        width: 9px;
+        height: 9px;
+    }
+
+    .card-logo-circle2 {
+        border: 1px solid #fff4eb;
+        width: 8px;
+        height: 8px;
+    }
+
+    .card-infographics img {
+        margin: 0 0 0 3px;
+    }
+
+    .account-balance {
+        padding-right: 3px;
+        font-size: 7px;
+    }
+
+    .card-holder-name {
+        padding-left: 5px;
+        font-size: 7px;
+    }
+
+    .card-expire-date {
+        padding-right: 5px;
+        font-size: 7px;
+    }
+
+    .subscription-title {
+        font-size: 5px;
+    }
+
+    .subscription-list-container {
+        border-radius: 20px;
+    }
+
+    .subscription-card {
+        margin: 3px auto;
+    }
+
+    .second-mobile-frame__button--power {
+        width: 6px;
+        height: 12px;
+        left: -3px;
+        border-radius: 3px;
+    }
+
+    .second-mobile-frame__button--sound {
+        width: 12px;
+        height: 18px;
+        border-radius: 4px;
+        box-shadow: 0 18px 0 #aeaeae;
+        left: -3px;
+    }
+}
