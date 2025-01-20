@@ -1121,3 +1121,129 @@
         left: -3px;
     }
 }
+
+@media (max-width: 399px) and (min-width: 300px) {
+    :root {
+        --upper-design-width: 75px;
+        --upper-design-height: 75px;
+    }
+
+    .second-mobile-container {
+        width: 117px;
+        height: 205px;
+    }
+
+    .second-mobile-body {
+        border-radius: 25px;
+        border: 1px solid #aeaeae; /* Inner border */
+        outline: 1px solid #717171;
+    }
+
+    .second-mobile-date {
+        font-size: 6px;
+    }
+
+    .account-holder-info {
+        padding-left: 5px;
+        font-size: 8px;
+    }
+
+    .account-holder-profile img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .second-account-title {
+        font-size: 1rem;
+    }
+
+    .debit-card {
+        border-radius: 8px;
+    }
+
+    .upper-design {
+        width: var(--upper-design-width);
+        height: var(--upper-design-height);
+    }
+
+    .extreme-circle {
+        width: calc(var(--upper-design-width) * (5/6));
+        height: calc(var(--upper-design-height) * (5/6));
+    }
+
+    .middle-circle {
+        width: calc(var(--upper-design-width) * (2/3));
+        height: calc(var(--upper-design-height) * (2/3));
+    }
+
+    .inner-circle {
+        width: calc(var(--upper-design-width) * (1/2));
+        height: calc(var(--upper-design-height) * (1/2));
+    }
+
+    .card-type {
+        padding-left: 3px;
+        font-size: 7px;
+    }
+
+    .card-type p {
+        padding-left: 3px;
+    }
+
+    .card-logo-circle1 {
+        width: 11px;
+        height: 11px;
+    }
+
+    .card-logo-circle2 {
+        border: 1px solid #fff4eb;
+        width: 10px;
+        height: 10px;
+    }
+
+    .card-infographics img {
+        margin: 0 0 0 3px;
+    }
+
+    .account-balance {
+        padding-right: 3px;
+        font-size: 8px;
+    }
+
+    .card-holder-name {
+        padding-left: 5px;
+        font-size: 8px;
+    }
+
+    .card-expire-date {
+        padding-right: 5px;
+        font-size: 8px;
+    }
+
+    .subscription-title {
+        font-size: 6px;
+    }
+
+    .subscription-list-container {
+        border-radius: 20px;
+    }
+
+    .subscription-card {
+        margin: 5px auto;
+    }
+
+    .second-mobile-frame__button--power {
+        width: 6px;
+        height: 15px;
+        left: -3px;
+        border-radius: 3px;
+    }
+
+    .second-mobile-frame__button--sound {
+        width: 12px;
+        height: 22px;
+        border-radius: 4px;
+        box-shadow: 0 22px 0 #aeaeae;
+        left: -3px;
+    }
+}

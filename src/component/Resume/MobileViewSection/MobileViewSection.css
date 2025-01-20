@@ -568,7 +568,7 @@
 
 @media (max-width: 499px) and (min-width: 400px) {
     .mobile-section {
-        height: 700px;
+        height: 750px;
     }
 
     .mobile-content-container {
@@ -647,5 +647,90 @@
         padding: 0 1rem;
         height: 80%;
         font-size: 8px;
+    }
+}
+
+@media (max-width: 399px) and (min-width: 300px) {
+    .mobile-section {
+        height: 600px;
+    }
+
+    .mobile-content-container {
+        margin: 0 auto;
+        height: 100%;
+        width: 300px;
+    }
+
+    .mobile-section-heading {
+        height: 7%;
+        font-size: 7px;
+    }
+
+    .mobile-reasons-section {
+        height: 33%;
+    }
+
+    .mobile-reasons-container {
+        justify-content: space-between;
+        padding-top: 0;
+    }
+
+    .mobile-reason {
+        width: 140px;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: -3px -3px 4px #37464e, 3px 3px 4px #081215;
+    }
+
+    .reason-image {
+        width: 17%;
+    }
+
+    .reason-image img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .reason-content {
+        width: 83%;
+        padding: 0 1px 0 0;
+    }
+
+    .reason-heading {
+        height: 25%;
+        font-size: 5px;
+    }
+
+    .reason-description {
+        height: 80%;
+        font-size: 5px;
+    }
+
+    .mobile-section-content {
+        flex-direction: column;
+        width: 100%;
+        height: 60%;
+    }
+
+    .mobile-container {
+        width: 90%;
+        height: 63%;
+    }
+
+    .mobile-content {
+        width: 100%;
+        height: 37%;
+    }
+
+    .mobile-content-heading {
+        align-items: center;
+        height: 20%;
+        font-size: 7px;
+    }
+
+    .mobile-content-text {
+        padding: 0 1rem;
+        height: 80%;
+        font-size: 7px;
     }
 }

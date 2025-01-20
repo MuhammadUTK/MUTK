@@ -571,3 +571,73 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 399px) and (min-width: 300px) {
+    .task-container {
+        border-radius: 5px;
+        height: 40px;
+        margin: 5px auto;
+    }
+
+    .task-information {
+        width: 65%;
+    }
+
+    .task-heading {
+        font-size: 5px;
+        padding-left: 2px;
+    }
+
+    .task-title-divider {
+        transform: rotate(20deg) translate(-50%);
+    }
+
+    .task-price {
+        font-size: 6px;
+    }
+
+    .task-duration {
+        font-size: 6px;
+    }
+
+    .task-duration-divider {
+        transform: rotate(20deg) translate(-50%);
+    }
+
+    .task-progress {
+        padding: 0 2px;
+    }
+
+    .total-percentage {
+        width: 50%;
+        height: 3px;
+    }
+
+    .progress-percentage {
+        width: 50%;
+        height: 3px;
+    }
+
+    .task-weeks {
+        width: 50%;
+        font-size: 7px;
+    }
+
+    .task-members {
+        width: 35%;
+        font-size: 6px;
+        padding: 2px;
+        text-align: center;
+    }
+
+    .member img {
+        height: 30%;
+    }
+
+    .member {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

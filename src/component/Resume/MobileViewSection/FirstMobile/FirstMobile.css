@@ -874,3 +874,109 @@
         left: -3px;
     }
 }
+
+@media (max-width: 399px) and (min-width: 300px) {
+    .first-mobile-container {
+        width: 117px;
+        height: 205px;
+    }
+
+    .first-mobile-body {
+        border-radius: 30px;
+        border: 1px solid #aeaeae; /* Inner border */
+        outline: 1px solid #717171;
+    }
+
+    .first-mobile-header {
+        height: 12%;
+    }
+
+    .account-info {
+        height: 55%;
+    }
+
+    .responsive-menu {
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .responsive-menu-bars {
+        height: 2px;
+        width: 40%;
+        box-shadow: 0 3px #956145;
+    }
+
+    .account-image {
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .account-image img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .mobile-date {
+        height: 45%;
+        font-size: 8px;
+    }
+
+    .first-mobile-title {
+        height: 12%;
+        justify-content: space-evenly;
+    }
+
+    .mobile-menu__button {
+        font-size: 9px;
+    }
+
+    .first-mobile-heading-divider {
+        transform: rotate(-20deg) translate(50%)
+    }
+
+    .date-item {
+        font-size: 10px;
+    }
+
+    .date-item::after {
+        width: 2px;
+        height: 2px;
+    }
+
+    .mobile-tasks-container {
+        border-radius: 25px;
+    }
+
+    .scroll-content {
+        animation: scrollUpAndDown 30s linear infinite; /* Apply animation */
+        will-change: transform; /* Hint the browser about upcoming changes for performance */
+    }
+
+    @keyframes scrollUpAndDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(calc(-100% + ((205px * 0.75) * 0.8) - 10px));
+        }
+        100% {
+            transform: translateY(0);
+
+        }
+    }
+
+    .first-mobile-frame__button--power {
+        width: 6px;
+        height: 15px;
+        left: -3px;
+        border-radius: 3px;
+    }
+
+    .first-mobile-frame__button--sound {
+        width: 12px;
+        height: 22px;
+        border-radius: 4px;
+        box-shadow: 0 22px 0 #aeaeae;
+        left: -3px;
+    }
+}
