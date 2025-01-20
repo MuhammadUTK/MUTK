@@ -1398,7 +1398,7 @@
     }
 
     .resume-intro-text {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -1407,11 +1407,12 @@
     }
 
     .resume-intro-heading {
-        font-size: 1.35rem;
+        width: 100%;
+        font-size: 1.7rem;
     }
 
     .resume-name {
-        font-size: 1.35rem;
+        font-size: 1.7rem;
     }
 
     .resume-intro-buttontype {
@@ -1427,27 +1428,36 @@
         margin: 0 10px;
     }
 
+    .resume-button::before {
+        top: 4px;
+    }
+
+    .resume-button::after {
+        bottom: 4px;
+    }
+
     .resume-stats {
+        width: 100%;
         top: 60%;
     }
 
     .resume-stats-text {
         justify-content: center;
         align-items: center;
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .resume-stats-divider {
-        width: 3px;
-        height: 60%;
+        width: 2px;
+        height: 90%;
         border-radius: 4px;
         background: linear-gradient(180deg, #006c4c, #4bffe1);
     }
@@ -1560,7 +1570,7 @@
     }
 
     .resume-intro-text {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -1569,11 +1579,13 @@
     }
 
     .resume-intro-heading {
-        font-size: 1.1rem;
+        width: 100%;
+        font-size: 1.3rem;
     }
 
     .resume-name {
-        font-size: 1.1rem;
+        width: 100%;
+        font-size: 1.3rem;
     }
 
     .resume-intro-buttontype {
@@ -1589,27 +1601,36 @@
         margin: 0 10px;
     }
 
+    .resume-button::before {
+        top: 3px;
+    }
+
+    .resume-button::after {
+        bottom: 3px;
+    }
+
     .resume-stats {
+        width: 100%;
         top: 60%;
     }
 
     .resume-stats-text {
         justify-content: center;
         align-items: center;
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 
     .resume-stats-divider {
-        width: 3px;
-        height: 60%;
+        width: 2px;
+        height: 90%;
         border-radius: 4px;
         background: linear-gradient(180deg, #006c4c, #4bffe1);
     }
@@ -1727,7 +1748,7 @@
     }
 
     .resume-intro-text {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -1736,11 +1757,13 @@
     }
 
     .resume-intro-heading {
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .resume-name {
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .resume-intro-buttontype {
@@ -1756,22 +1779,32 @@
         margin: 0 10px;
     }
 
+    .resume-button::before {
+        top: 3px;
+    }
+
+    .resume-button::after {
+        bottom: 3px;
+    }
+
     .resume-stats {
+        width: 100%;
         top: 60%;
     }
 
     .resume-stats-text {
         justify-content: center;
         align-items: center;
-        font-size: 0.35rem;
+        font-size: 0.45rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 0.9rem;
+        padding: 5px 0;
+        font-size: 1.2rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.27rem;
+        font-size: 0.4rem;
     }
 
     .resume-stats-divider {
