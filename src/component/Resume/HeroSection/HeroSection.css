@@ -33,13 +33,12 @@
 
 .resume-intro-text {
     color: #faf8f5;
-    width: 80%;
+    width: 95%;
     height: 40%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 1.2rem;
+    left: 5%;
+    font-size: 1.4rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -47,15 +46,14 @@
 }
 
 .resume-intro-heading {
-    width: 80%;
     padding: 10px 0;
     font-weight: 800;
-    font-size: 2.27rem;
+    font-size: 2.8rem;
 }
 
 .resume-name {
     font-weight: 800;
-    font-size: 2.27rem;
+    font-size: 2.8rem;
     background: #00bd96;
     background-clip: text;
     color: transparent;
@@ -69,9 +67,8 @@
 .resume-intro-buttontype {
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
+    left: 5%;
+    width: 95%;
     height: 15%;
     display: flex;
     align-items: center;
@@ -95,7 +92,7 @@
     box-shadow: 0px 10px 10px rgb(4, 239, 189) inset,
     0px 5px 10px rgba(5, 5, 5, 0.212),
     0px -10px 10px #00604e inset;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .resume-button::before {
@@ -126,12 +123,11 @@
 
 
 .resume-stats {
-    width: 80%;
+    width: 95%;
     height: 30%;
     position: absolute;
     top: 55%;
-    left: 50%;
-    transform: translate(-50%);
+    left: 5%;
 }
 
 .resume-stats-text {
@@ -143,6 +139,7 @@
     padding-left: 15px;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .resume-stats-content {
@@ -170,7 +167,7 @@
 }
 
 .resume-stats-block  {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .resume-stats-divider {
@@ -783,11 +780,11 @@
     }
 
     .resume-intro-heading {
-        font-size: 1.9rem;
+        font-size: 2.4rem;
     }
 
     .resume-name {
-        font-size: 1.9rem;
+        font-size: 2.4rem;
     }
 
     .resume-button {
@@ -797,12 +794,16 @@
         font-size: 1.1rem;
     }
 
+    .resume-stats-text {
+        font-size: 1.1rem;
+    }
+
     .resume-stats-block h1 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
     }
 
     .resume-stats-block  {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .project-description {
@@ -840,11 +841,11 @@
     }
 
     .resume-intro-heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .resume-name {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .resume-button {
@@ -859,11 +860,11 @@
     }
 
     .resume-stats-block h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .resume-stats-divider {
@@ -938,15 +939,15 @@
     }
 
     .resume-intro-text {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
     }
 
     .resume-intro-heading {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .resume-name {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .resume-button {
@@ -957,15 +958,15 @@
     }
 
     .resume-stats-text {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.55rem;
+        font-size: 1.8rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
 
     .resume-stats-divider {
@@ -1045,34 +1046,35 @@
     }
 
     .resume-intro-text {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .resume-intro-heading {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .resume-name {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .resume-button {
-        width: 84px;
+        margin-left: 30px;
+        width: 90px;
         height: 33px;
         border-radius: 15px;
         font-size: 0.7rem;
     }
 
     .resume-stats-text {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .resume-stats-divider {
@@ -1157,18 +1159,19 @@
     }
 
     .resume-intro-text {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .resume-intro-heading {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     .resume-name {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     .resume-button {
+        margin-left: 25px;
         width: 72px;
         height: 27px;
         border-radius: 15px;
@@ -1176,15 +1179,15 @@
     }
 
     .resume-stats-text {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
 
     .resume-stats-divider {
@@ -1269,18 +1272,19 @@
     }
 
     .resume-intro-text {
-        font-size: 0.35rem;
+        font-size: 0.5rem;
     }
 
     .resume-intro-heading {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .resume-name {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .resume-button {
+        margin-left: 10px;
         width: 56px;
         height: 21px;
         border-radius: 15px;
@@ -1288,15 +1292,17 @@
     }
 
     .resume-stats-text {
-        font-size: 0.35rem;
+        font-size: 0.45rem;
+        padding-left: 5px;
     }
 
     .resume-stats-block h1 {
-        font-size: 1.1rem;
+        padding: 5px 0;
+        font-size: 1.2rem;
     }
 
     .resume-stats-block  {
-        font-size: 0.3rem;
+        font-size: 0.4rem;
     }
 
     .resume-stats-divider {
