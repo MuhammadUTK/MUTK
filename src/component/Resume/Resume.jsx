@@ -7,6 +7,8 @@ import CardSection from "./InformationSection/InformationSection.jsx";
 import PortfolioNotCompleted from "./PortfolioNotCompleted/PortfolioNotCompleted.jsx";
 import Acknowledgment from "./Acknowledgment/Acknowledgment.jsx";
 import {useState, useEffect} from "react";
+import CustomerReviewSection from "./CustomerReviewSection/CustomerReviewSection.jsx";
+import TechnologySection from "./TechnologySection/TechnologySection.jsx";
 
 
 function Resume() {
@@ -35,6 +37,8 @@ function Resume() {
                         <>
                             <CardSection/>
                             <MobileViewSection />
+                            <CustomerReviewSection />
+                            <TechnologySection />
                             <PortfolioNotCompleted />
                         </>
                     )

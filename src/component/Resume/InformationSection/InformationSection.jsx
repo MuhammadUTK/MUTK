@@ -33,7 +33,6 @@ function InformationSection() {
                 const sampleLayoutCopy = [...prev]
                 const lastSample = sampleLayoutCopy.pop();
                 sampleLayoutCopy.unshift(lastSample);
-                console.log("New List", sampleLayoutCopy)
                 return sampleLayoutCopy;
             })
             setAnimationKey(prevKey => prevKey + 1)
