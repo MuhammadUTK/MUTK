@@ -15,6 +15,8 @@ import BootstrapLogo from "../Images/Technologies/Bootstrap.png"
 import VercelLogo from "../Images/Technologies/Vercel.png"
 import JestLogo from "../Images/Technologies/Jest.png"
 import ReactRouterLogo from "../Images/Technologies/ReactRouter.png"
+import TypeScriptLogo from "../Images/Technologies/TypeScript.png"
+import TailwindLogo from "../Images/Technologies/Tailwind.png"
 
 function TechnologySection() {
 
@@ -25,10 +27,6 @@ function TechnologySection() {
         },
         {   technology: "GraphQL",
             logoImage: GraphqlLogo,
-            shadowColor: "000000"
-        },
-        {   technology: "React Router",
-            logoImage: ReactRouterLogo,
             shadowColor: "000000"
         },
         {   technology: "REST Api",
@@ -43,36 +41,48 @@ function TechnologySection() {
             logoImage: ReduxLogo,
             shadowColor: "000000"
         },
-        {   technology: "Git/GitHub",
-            logoImage: GitHubLogo,
-            shadowColor: "000000"
-        },
-        {   technology: "HTML",
-            logoImage: HTMLLogo,
+        {   technology: "TypeScript",
+            logoImage: TypeScriptLogo,
             shadowColor: "000000"
         },
         {   technology: "Axios",
             logoImage: AxiosLogo,
             shadowColor: "000000"
         },
-        {   technology: "CSS",
-            logoImage: CSSLogo,
-            shadowColor: "000000"
-        },
         {   technology: "Jest",
             logoImage: JestLogo,
+            shadowColor: "000000"
+        },
+        {   technology: "Tailwind",
+            logoImage: TailwindLogo,
+            shadowColor: "000000"
+        },
+        {   technology: "Git/GitHub",
+            logoImage: GitHubLogo,
+            shadowColor: "000000"
+        },
+        {   technology: "React Router",
+            logoImage: ReactRouterLogo,
+            shadowColor: "000000"
+        },
+        {   technology: "HTML",
+            logoImage: HTMLLogo,
+            shadowColor: "000000"
+        },
+        {   technology: "CSS",
+            logoImage: CSSLogo,
             shadowColor: "000000"
         },
         {   technology: "React Query",
             logoImage: ReactQueryLogo,
             shadowColor: "000000"
         },
-        {   technology: "Vercel",
-            logoImage: VercelLogo,
-            shadowColor: "000000"
-        },
         {   technology: "Bootstrap",
             logoImage: BootstrapLogo,
+            shadowColor: "000000"
+        },
+        {   technology: "Vercel",
+            logoImage: VercelLogo,
             shadowColor: "000000"
         }
     ]
@@ -80,21 +90,35 @@ function TechnologySection() {
     const [componentDimensions, setComponentDimensions] = useState({width: 0, height: 0});
     const [gridData, setGridData] = useState({rows: 0, columns: 0, gridEmptyArray: [[]]});
     const compRef = useRef(null);
-    let techArrayIndex = useRef(0);
 
     const techGridDimensions = (width, height) => {
-        const techGridColumns = Math.floor((width - ((Math.floor(width / 100) - 1) * 15)) / 100);
-        const techGridRows = Math.ceil((height - ((Math.floor(height / 100) - 1) * 35)) / 100);
-        const temporaryGrid = Array.from({ length: techGridRows }, () => Array(techGridColumns).fill(null));
+        let techPerRow;
+        let gridGap;
+        let gridRowBottomMargin;
+        if (width >= 1700) {
+            (techPerRow = 9, gridRowBottomMargin = 35, gridGap = 15)
+        }
+        else if (width < 1700 && width >= 1500) {
+            (techPerRow = 8, gridRowBottomMargin = 35, gridGap = 15)
+        }
+        else if (width < 1500 && width >= 1300) {
+            (techPerRow = 7, gridRowBottomMargin = 35, gridGap = 15)
+        }
+        else if (width < 1300 && width >= 1100) {
+            (techPerRow = 6, gridRowBottomMargin = 35, gridGap = 15)
+        }
+
+        const techGridColumns = Math.floor((width - ((Math.floor(width / 100) - 1) * gridGap)) / 100);
+        const techGridRows = Math.ceil((height - ((Math.floor(height / 100) - 1) * gridRowBottomMargin)) / 100);
         setGridData( prevGridData => {
             if( prevGridData.rows != techGridRows || prevGridData.columns != techGridColumns ) {
+                const temporaryGrid = Array.from({ length: techGridRows }, () => Array(techGridColumns).fill(null));
                 let techGridCell = 1;
-                let contentColumns = techGridColumns - 6;
-                let contentRows = Math.ceil(technologyList.length / contentColumns)
-
                 for (let rowIndex = 0; rowIndex < techGridRows; rowIndex++) {
+                    let columnGap = technologyList.length - (techGridCell - 1) >= techPerRow ? Math.floor(techGridColumns - techPerRow - 1) / 2 : Math.floor(techGridColumns - (technologyList.length - (techGridCell - 1)) - 1) / 2 ;
+                    let contentRows = Math.ceil(technologyList.length / techPerRow)
                     for (let colIndex = 0; colIndex < techGridColumns; colIndex++) {
-                        if (0 < rowIndex && rowIndex < contentRows + 1 && colIndex > 4 && colIndex < (contentColumns + 3) && techGridCell <= technologyList.length) {
+                        if (0 < rowIndex && rowIndex < contentRows + 1 && colIndex > columnGap && colIndex <= (techPerRow + (columnGap)) && techGridCell <= technologyList.length) {
                             temporaryGrid[rowIndex][colIndex] = techGridCell;
                             techGridCell++;
                         }
@@ -109,11 +133,9 @@ function TechnologySection() {
     useEffect(() => {
         const dimensionCheck = () => {
             if (compRef.current) {
-                techArrayIndex.current = 0;
-                console.log(techArrayIndex.current);
                 const {width, height} = compRef.current.getBoundingClientRect();
+                techGridDimensions(width, height);
                 setComponentDimensions( prevValue => {
-                    techGridDimensions(width, height);
                     if (Math.abs(width - prevValue.width) > 150) {
                         console.log(width, prevValue.width, Math.abs(width - componentDimensions.width))
                         return ( {width, height} )
@@ -136,10 +158,6 @@ function TechnologySection() {
         }
     }, []);
 
-    console.log(techArrayIndex.current);
-    console.log(gridData)
-    console.log(componentDimensions);
-
     return (
         <div className="technologies-section">
             <div className="technologies-container">
@@ -154,11 +172,11 @@ function TechnologySection() {
                                     {gridData.gridEmptyArray[rowIndex].map((cell, colIndex) => (
                                         <div className="technology-block" key={`tech-block-${rowIndex}-${colIndex}`}>
                                             {cell > 0 && (
-                                                <div className="technology-image">
+                                                <div className="technology-block-content">
                                                     <img src={technologyList[cell - 1]?.logoImage}
                                                          alt={technologyList[cell - 1]?.technology}/>
                                                     <div className="technology-name">
-                                                        <p>{cell}: {technologyList[cell - 1]?.technology}</p>
+                                                        <p>{technologyList[cell - 1]?.technology}</p>
                                                     </div>
                                                 </div>
                                             )}
