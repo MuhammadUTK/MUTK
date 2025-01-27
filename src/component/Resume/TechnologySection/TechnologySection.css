@@ -91,6 +91,11 @@
     flex: 0 0 auto;
 }
 
+.technology-block:hover:has(.technology-block-content) {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+    box-shadow: 0 0 25px var(--bg-glow-color);
+}
+
 .technology-block-content {
     width: 100%;
     height: 100%;
@@ -136,5 +141,5 @@
     transform: translateX(-50%);
     top: 100%;
     border: 10px solid;
-    border-color: #faf8f5 #faf8f5 transparent transparent;
+    border-color: #faf8f5 transparent transparent transparent;
 }

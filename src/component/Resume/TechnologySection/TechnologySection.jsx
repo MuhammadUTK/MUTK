@@ -23,67 +23,67 @@ function TechnologySection() {
     const technologyList = [
         {   technology: "React",
             logoImage: ReactLogo,
-            shadowColor: "000000"
+            shadowColor: "#00d6fd"
         },
         {   technology: "GraphQL",
             logoImage: GraphqlLogo,
-            shadowColor: "000000"
+            shadowColor: "#ff09ba"
         },
         {   technology: "REST Api",
             logoImage: RESTapiLogo,
-            shadowColor: "000000"
+            shadowColor: "#0ba4da"
         },
         {   technology: "JavaScript",
             logoImage: JavaScriptLogo,
-            shadowColor: "000000"
+            shadowColor: "#f0db4e"
         },
         {   technology: "Redux Toolkit",
             logoImage: ReduxLogo,
-            shadowColor: "000000"
+            shadowColor: "#7851be"
         },
         {   technology: "TypeScript",
             logoImage: TypeScriptLogo,
-            shadowColor: "000000"
+            shadowColor: "#047bcb"
         },
         {   technology: "Axios",
             logoImage: AxiosLogo,
-            shadowColor: "000000"
+            shadowColor: "#3a6be2"
         },
         {   technology: "Jest",
             logoImage: JestLogo,
-            shadowColor: "000000"
+            shadowColor: "#d43f18"
         },
         {   technology: "Tailwind",
             logoImage: TailwindLogo,
-            shadowColor: "000000"
+            shadowColor: "#5dccba"
         },
         {   technology: "Git/GitHub",
             logoImage: GitHubLogo,
-            shadowColor: "000000"
+            shadowColor: "#f5cbb3"
         },
         {   technology: "React Router",
             logoImage: ReactRouterLogo,
-            shadowColor: "000000"
+            shadowColor: "#fd494c"
         },
         {   technology: "HTML",
             logoImage: HTMLLogo,
-            shadowColor: "000000"
+            shadowColor: "#f0652a"
         },
         {   technology: "CSS",
             logoImage: CSSLogo,
-            shadowColor: "000000"
+            shadowColor: "#4382df"
         },
         {   technology: "React Query",
             logoImage: ReactQueryLogo,
-            shadowColor: "000000"
+            shadowColor: "#fe4253"
         },
         {   technology: "Bootstrap",
             logoImage: BootstrapLogo,
-            shadowColor: "000000"
+            shadowColor: "#c484fc"
         },
         {   technology: "Vercel",
             logoImage: VercelLogo,
-            shadowColor: "000000"
+            shadowColor: "#808080"
         }
     ]
 
@@ -95,21 +95,22 @@ function TechnologySection() {
         let techPerRow;
         let gridGap;
         let gridRowBottomMargin;
+        let techBlockWidthHeight;
         if (width >= 1700) {
-            (techPerRow = 9, gridRowBottomMargin = 35, gridGap = 15)
+            (techPerRow = 9, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 100)
         }
         else if (width < 1700 && width >= 1500) {
-            (techPerRow = 8, gridRowBottomMargin = 35, gridGap = 15)
+            (techPerRow = 8, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 100)
         }
         else if (width < 1500 && width >= 1300) {
-            (techPerRow = 7, gridRowBottomMargin = 35, gridGap = 15)
+            (techPerRow = 7, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 100)
         }
         else if (width < 1300 && width >= 1100) {
-            (techPerRow = 6, gridRowBottomMargin = 35, gridGap = 15)
+            (techPerRow = 6, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 100)
         }
 
-        const techGridColumns = Math.floor((width - ((Math.floor(width / 100) - 1) * gridGap)) / 100);
-        const techGridRows = Math.ceil((height - ((Math.floor(height / 100) - 1) * gridRowBottomMargin)) / 100);
+        const techGridColumns = Math.floor((width - ((Math.floor(width / techBlockWidthHeight) - 1) * gridGap)) / techBlockWidthHeight);
+        const techGridRows = Math.ceil((height - ((Math.floor(height / techBlockWidthHeight) - 1) * gridRowBottomMargin)) / techBlockWidthHeight);
         setGridData( prevGridData => {
             if( prevGridData.rows != techGridRows || prevGridData.columns != techGridColumns ) {
                 const temporaryGrid = Array.from({ length: techGridRows }, () => Array(techGridColumns).fill(null));
@@ -170,7 +171,7 @@ function TechnologySection() {
                             gridData.gridEmptyArray.map((_, rowIndex) => (
                                 <div className="technology-grid-row" key={`grid-row-${rowIndex}`}>
                                     {gridData.gridEmptyArray[rowIndex].map((cell, colIndex) => (
-                                        <div className="technology-block" key={`tech-block-${rowIndex}-${colIndex}`}>
+                                        <div className="technology-block" style={{ '--bg-glow-color': technologyList[cell - 1]?.shadowColor }} key={`tech-block-${rowIndex}-${colIndex}`}>
                                             {cell > 0 && (
                                                 <div className="technology-block-content">
                                                     <img src={technologyList[cell - 1]?.logoImage}
