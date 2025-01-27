@@ -106,7 +106,34 @@ function TechnologySection() {
             (techPerRow = 7, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 100)
         }
         else if (width < 1300 && width >= 1100) {
-            (techPerRow = 6, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 100)
+            (techPerRow = 6, gridRowBottomMargin = 35, gridGap = 15, techBlockWidthHeight = 85)
+        }
+        else if (width < 1100 && width >= 1000) {
+            (techPerRow = 7, gridRowBottomMargin = 25, gridGap = 15, techBlockWidthHeight = 70)
+        }
+        else if (width < 1000 && width >= 900) {
+            (techPerRow = 6, gridRowBottomMargin = 25, gridGap = 15, techBlockWidthHeight = 70)
+        }
+        else if (width < 900 && width >= 750) {
+            (techPerRow = 7, gridRowBottomMargin = 25, gridGap = 15, techBlockWidthHeight = 55)
+        }
+        else if (width < 750 && width >= 600) {
+            (techPerRow = 6, gridRowBottomMargin = 20, gridGap = 10, techBlockWidthHeight = 50)
+        }
+        else if (width < 600 && width >= 550) {
+            (techPerRow = 5, gridRowBottomMargin = 25, gridGap = 10, techBlockWidthHeight = 70)
+        }
+        else if (width < 550 && width >= 500) {
+            (techPerRow = 4, gridRowBottomMargin = 25, gridGap = 10, techBlockWidthHeight = 70)
+        }
+        else if (width < 500 && width >= 450) {
+            (techPerRow = 5, gridRowBottomMargin = 20, gridGap = 10, techBlockWidthHeight = 55)
+        }
+        else if (width < 450 && width >= 400) {
+            (techPerRow = 4, gridRowBottomMargin = 25, gridGap = 10, techBlockWidthHeight = 55)
+        }
+        else if (width < 400 ) {
+            (techPerRow = 4, gridRowBottomMargin = 20, gridGap = 10, techBlockWidthHeight = 45)
         }
 
         const techGridColumns = Math.floor((width - ((Math.floor(width / techBlockWidthHeight) - 1) * gridGap)) / techBlockWidthHeight);
