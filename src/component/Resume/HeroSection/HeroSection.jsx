@@ -238,8 +238,8 @@ function HeroSection() {
         <div className="resume-hero-container">
             <div className="resume-mainbody">
                 <div className="resume-intro">
-                    <div className="resume-intro-background">
-                    </div>
+                    {/*<div className="resume-intro-background">*/}
+                    {/*</div>*/}
                     <div className="resume-intro-text">
                         <p>Hello there, Welcome to my Portfolio!</p>
                         <div className="resume-intro-heading">
