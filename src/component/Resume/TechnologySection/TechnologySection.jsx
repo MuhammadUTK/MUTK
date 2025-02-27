@@ -17,6 +17,11 @@ import JestLogo from "../Images/Technologies/Jest.png"
 import ReactRouterLogo from "../Images/Technologies/ReactRouter.png"
 import TypeScriptLogo from "../Images/Technologies/TypeScript.png"
 import TailwindLogo from "../Images/Technologies/Tailwind.png"
+import MongoDBLogo from "../Images/Technologies/MongoDB.png"
+import MongooseLogo from "../Images/Technologies/Mongoose.png"
+import RedisLogo from "../Images/Technologies/Redis.png"
+import ExpressLogo from "../Images/Technologies/Express.png"
+import NodeLogo from "../Images/Technologies/Node.png"
 
 function TechnologySection() {
 
@@ -28,6 +33,22 @@ function TechnologySection() {
         {   technology: "GraphQL",
             logoImage: GraphqlLogo,
             shadowColor: "#ff09ba"
+        },
+        {   technology: "Node",
+            logoImage: NodeLogo,
+            shadowColor: "#00ae03"
+        },
+        {   technology: "Express",
+            logoImage: ExpressLogo,
+            shadowColor: "#fff400"
+        },
+        {   technology: "MongoDB",
+            logoImage: MongoDBLogo,
+            shadowColor: "#06ea39"
+        },
+        {   technology: "Mongoose",
+            logoImage: MongooseLogo,
+            shadowColor: "#ff0061"
         },
         {   technology: "REST Api",
             logoImage: RESTapiLogo,
